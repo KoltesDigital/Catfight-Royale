@@ -265,8 +265,11 @@ public class Princess : MonoBehaviour
 	// Detect AttackInput
 	bool GetAttackInput ()
 	{
-		return Input.GetButtonDown ("A_1");
-		//return Input.GetButtonDown ("A_" + index.ToString ());
+		if (index == 1 && Input.GetKeyDown (KeyCode.Space))
+			return true;
+
+		//return Input.GetButtonDown ("A_1");
+		return Input.GetButtonDown ("A_" + index.ToString ());
 	}
 
 	// Start a fight
