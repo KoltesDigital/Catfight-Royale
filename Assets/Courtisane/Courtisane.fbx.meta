@@ -1,0 +1,879 @@
+fileFormatVersion: 2
+guid: 75c622c87622dcd409acb12048e9c82b
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Arm
+    100002: Armature
+    100004: bras
+    100006: buste
+    100008: //RootNode
+    100010: Dress_B
+    100012: Dress_T
+    100014: Forearm
+    100016: Head
+    100018: Neck
+    100020: robe
+    100022: Root
+    100024: Shoulder
+    100026: Sun
+    100028: tete
+    100030: Torso_B
+    100032: Torso_M
+    100034: Torso_T
+    100036: volant
+    100038: Arm_L
+    100040: Arm_R
+    100042: bras_L
+    100044: Forearm_L
+    100046: Forearm_R
+    100048: Shoulder_L
+    100050: Shoulder_R
+    100052: Armature_001
+    100054: Bone
+    100056: bras_001
+    100058: bras_R
+    100060: Wrist_L
+    100062: Wrist_R
+    100064: Grab
+    400000: Arm
+    400002: Armature
+    400004: bras
+    400006: buste
+    400008: //RootNode
+    400010: Dress_B
+    400012: Dress_T
+    400014: Forearm
+    400016: Head
+    400018: Neck
+    400020: robe
+    400022: Root
+    400024: Shoulder
+    400026: Sun
+    400028: tete
+    400030: Torso_B
+    400032: Torso_M
+    400034: Torso_T
+    400036: volant
+    400038: Arm_L
+    400040: Arm_R
+    400042: bras_L
+    400044: Forearm_L
+    400046: Forearm_R
+    400048: Shoulder_L
+    400050: Shoulder_R
+    400052: Armature_001
+    400054: Bone
+    400056: bras_001
+    400058: bras_R
+    400060: Wrist_L
+    400062: Wrist_R
+    400064: Grab
+    4300000: volant
+    4300002: tete
+    4300004: robe
+    4300006: buste
+    4300008: bras
+    4300010: bras_L
+    4300012: bras_001
+    4300014: bras_R
+    7400000: idle
+    7400002: Default Take
+    7400004: run
+    7400006: attack
+    7400008: hit
+    7400010: rest
+    7400012: stand
+    7400014: take
+    7400016: take_loop
+    7400018: success
+    7400020: fail
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: bras
+    13700002: buste
+    13700004: robe
+    13700006: tete
+    13700008: volant
+    13700010: bras_L
+    13700012: bras_001
+    13700014: bras_R
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: attack
+      takeName: attack
+      firstFrame: 0
+      lastFrame: 18
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Root
+        weight: 1
+      - path: Armature/Root/Dress_T
+        weight: 1
+      - path: Armature/Root/Dress_T/Dress_B
+        weight: 1
+      - path: Armature/Root/Torso_M
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Neck
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Neck/Head
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_L
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_L/Arm_L
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_L/Arm_L/Forearm_L
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_L/Arm_L/Forearm_L/Wrist_L
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_R
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_R/Arm_R
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_R/Arm_R/Forearm_R
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_R/Arm_R/Forearm_R/Wrist_R
+        weight: 1
+      - path: bras_L
+        weight: 1
+      - path: bras_R
+        weight: 1
+      - path: buste
+        weight: 1
+      - path: robe
+        weight: 1
+      - path: tete
+        weight: 1
+      - path: volant
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hit
+      takeName: hit
+      firstFrame: 0
+      lastFrame: 16
+      wrapMode: 1
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Root
+        weight: 1
+      - path: Armature/Root/Dress_T
+        weight: 1
+      - path: Armature/Root/Dress_T/Dress_B
+        weight: 1
+      - path: Armature/Root/Torso_M
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Neck
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Neck/Head
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_L
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_L/Arm_L
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_L/Arm_L/Forearm_L
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_L/Arm_L/Forearm_L/Wrist_L
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_R
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_R/Arm_R
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_R/Arm_R/Forearm_R
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_R/Arm_R/Forearm_R/Wrist_R
+        weight: 1
+      - path: bras_L
+        weight: 1
+      - path: bras_R
+        weight: 1
+      - path: buste
+        weight: 1
+      - path: robe
+        weight: 1
+      - path: tete
+        weight: 1
+      - path: volant
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: idle
+      takeName: idle
+      firstFrame: 0
+      lastFrame: 43
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Root
+        weight: 1
+      - path: Armature/Root/Dress_T
+        weight: 1
+      - path: Armature/Root/Dress_T/Dress_B
+        weight: 1
+      - path: Armature/Root/Torso_M
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Neck
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Neck/Head
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_L
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_L/Arm_L
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_L/Arm_L/Forearm_L
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_L/Arm_L/Forearm_L/Wrist_L
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_R
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_R/Arm_R
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_R/Arm_R/Forearm_R
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_R/Arm_R/Forearm_R/Wrist_R
+        weight: 1
+      - path: bras_L
+        weight: 1
+      - path: bras_R
+        weight: 1
+      - path: buste
+        weight: 1
+      - path: robe
+        weight: 1
+      - path: tete
+        weight: 1
+      - path: volant
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: rest
+      takeName: rest
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Root
+        weight: 1
+      - path: Armature/Root/Dress_T
+        weight: 1
+      - path: Armature/Root/Dress_T/Dress_B
+        weight: 1
+      - path: Armature/Root/Torso_M
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Neck
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Neck/Head
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_L
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_L/Arm_L
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_L/Arm_L/Forearm_L
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_L/Arm_L/Forearm_L/Wrist_L
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_R
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_R/Arm_R
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_R/Arm_R/Forearm_R
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_R/Arm_R/Forearm_R/Wrist_R
+        weight: 1
+      - path: bras_L
+        weight: 1
+      - path: bras_R
+        weight: 1
+      - path: buste
+        weight: 1
+      - path: robe
+        weight: 1
+      - path: tete
+        weight: 1
+      - path: volant
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: run
+      takeName: run
+      firstFrame: 0
+      lastFrame: 12
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Root
+        weight: 1
+      - path: Armature/Root/Dress_T
+        weight: 1
+      - path: Armature/Root/Dress_T/Dress_B
+        weight: 1
+      - path: Armature/Root/Torso_M
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Neck
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Neck/Head
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_L
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_L/Arm_L
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_L/Arm_L/Forearm_L
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_L/Arm_L/Forearm_L/Wrist_L
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_R
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_R/Arm_R
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_R/Arm_R/Forearm_R
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_R/Arm_R/Forearm_R/Wrist_R
+        weight: 1
+      - path: bras_L
+        weight: 1
+      - path: bras_R
+        weight: 1
+      - path: buste
+        weight: 1
+      - path: robe
+        weight: 1
+      - path: tete
+        weight: 1
+      - path: volant
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: stand
+      takeName: stand
+      firstFrame: 0
+      lastFrame: 16
+      wrapMode: 1
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Root
+        weight: 1
+      - path: Armature/Root/Dress_T
+        weight: 1
+      - path: Armature/Root/Dress_T/Dress_B
+        weight: 1
+      - path: Armature/Root/Torso_M
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Neck
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Neck/Head
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_L
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_L/Arm_L
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_L/Arm_L/Forearm_L
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_L/Arm_L/Forearm_L/Wrist_L
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_R
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_R/Arm_R
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_R/Arm_R/Forearm_R
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_R/Arm_R/Forearm_R/Wrist_R
+        weight: 1
+      - path: bras_L
+        weight: 1
+      - path: bras_R
+        weight: 1
+      - path: buste
+        weight: 1
+      - path: robe
+        weight: 1
+      - path: tete
+        weight: 1
+      - path: volant
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: take
+      takeName: take
+      firstFrame: 0
+      lastFrame: 24
+      wrapMode: 1
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Root
+        weight: 1
+      - path: Armature/Root/Dress_T
+        weight: 1
+      - path: Armature/Root/Dress_T/Dress_B
+        weight: 1
+      - path: Armature/Root/Torso_M
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Neck
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Neck/Head
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_L
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_L/Arm_L
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_L/Arm_L/Forearm_L
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_L/Arm_L/Forearm_L/Wrist_L
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_R
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_R/Arm_R
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_R/Arm_R/Forearm_R
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_R/Arm_R/Forearm_R/Wrist_R
+        weight: 1
+      - path: bras_L
+        weight: 1
+      - path: bras_R
+        weight: 1
+      - path: buste
+        weight: 1
+      - path: robe
+        weight: 1
+      - path: tete
+        weight: 1
+      - path: volant
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: take_loop
+      takeName: take_loop
+      firstFrame: 0
+      lastFrame: 12
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Root
+        weight: 1
+      - path: Armature/Root/Dress_T
+        weight: 1
+      - path: Armature/Root/Dress_T/Dress_B
+        weight: 1
+      - path: Armature/Root/Torso_M
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Neck
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Neck/Head
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_L
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_L/Arm_L
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_L/Arm_L/Forearm_L
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_L/Arm_L/Forearm_L/Grab
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_L/Arm_L/Forearm_L/Wrist_L
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_R
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_R/Arm_R
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_R/Arm_R/Forearm_R
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_R/Arm_R/Forearm_R/Wrist_R
+        weight: 1
+      - path: bras_L
+        weight: 1
+      - path: bras_R
+        weight: 1
+      - path: buste
+        weight: 1
+      - path: robe
+        weight: 1
+      - path: tete
+        weight: 1
+      - path: volant
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: success
+      takeName: success
+      firstFrame: 0
+      lastFrame: 24
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Root
+        weight: 1
+      - path: Armature/Root/Dress_T
+        weight: 1
+      - path: Armature/Root/Dress_T/Dress_B
+        weight: 1
+      - path: Armature/Root/Torso_M
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Neck
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Neck/Head
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_L
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_L/Arm_L
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_L/Arm_L/Forearm_L
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_L/Arm_L/Forearm_L/Grab
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_L/Arm_L/Forearm_L/Wrist_L
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_R
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_R/Arm_R
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_R/Arm_R/Forearm_R
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_R/Arm_R/Forearm_R/Wrist_R
+        weight: 1
+      - path: bras_L
+        weight: 1
+      - path: bras_R
+        weight: 1
+      - path: buste
+        weight: 1
+      - path: robe
+        weight: 1
+      - path: tete
+        weight: 1
+      - path: volant
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: fail
+      takeName: fail
+      firstFrame: 0
+      lastFrame: 18
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Root
+        weight: 1
+      - path: Armature/Root/Dress_T
+        weight: 1
+      - path: Armature/Root/Dress_T/Dress_B
+        weight: 1
+      - path: Armature/Root/Torso_M
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Neck
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Neck/Head
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_L
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_L/Arm_L
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_L/Arm_L/Forearm_L
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_L/Arm_L/Forearm_L/Grab
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_L/Arm_L/Forearm_L/Wrist_L
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_R
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_R/Arm_R
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_R/Arm_R/Forearm_R
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_R/Arm_R/Forearm_R/Wrist_R
+        weight: 1
+      - path: bras_L
+        weight: 1
+      - path: bras_R
+        weight: 1
+      - path: buste
+        weight: 1
+      - path: robe
+        weight: 1
+      - path: tete
+        weight: 1
+      - path: volant
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .550000012
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 0
+  userData: 
