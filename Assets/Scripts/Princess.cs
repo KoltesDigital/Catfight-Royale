@@ -15,6 +15,7 @@ public class Princess : MonoBehaviour
 	private enum PlayerState
 	{
 		Free,
+		Punching,
 		Fighting,
 		Resting
 	}
@@ -44,13 +45,17 @@ public class Princess : MonoBehaviour
 
 	// Fight
 	[HideInInspector]
-	public float
-		stamina = 1.0f;
+	public float stamina = 1.0f;
+	public float staminaPunchLoss = 0.2f;
 	public float staminaLoss = 0.05f;
 	public float staminaRegen = 0.1f;
+	public float staminaMashResist = 0.1f;
 	private StaminaBar staminaBar;
 	[HideInInspector]
 	public Princess opponent;
+	private PunchHitbox punchHitbox;
+
+	private float attackButtonCooldown = 0.0f;
 
 	// Use this for initialization
 	void Start ()
@@ -58,6 +63,7 @@ public class Princess : MonoBehaviour
 		playerAnimation = GetComponentInChildren<Animation> ();
 		attackAnimation = playerAnimation ["attack"];
 		staminaBar = GetComponentInChildren<StaminaBar> ();
+		punchHitbox = GetComponentInChildren<PunchHitbox>();
 
 		SetFree ();
 	}
@@ -143,6 +149,9 @@ public class Princess : MonoBehaviour
 			if (state == PlayerState.Free)
 				UpdateMotion ();
 
+			if ( state == PlayerState.Punching )
+				UpdatePunch();
+
 			UpdateFight ();
 		}
 
@@ -154,6 +163,21 @@ public class Princess : MonoBehaviour
 		// Update motion velocity
 		float xSpeed = Input.GetAxis ("L_XAxis_" + index.ToString ()) * MoveHorizontalSpeed;
 		float ySpeed = Input.GetAxis ("L_YAxis_" + index.ToString ()) * MoveVerticalSpeed;
+
+		// for debug only
+		if ( index == 2 ) {
+			if ( Input.GetKey( KeyCode.LeftArrow ) )
+				xSpeed = -MoveHorizontalSpeed;
+
+			if ( Input.GetKey( KeyCode.RightArrow ) )
+				xSpeed = MoveHorizontalSpeed;
+
+			if ( Input.GetKey( KeyCode.UpArrow ) )
+				ySpeed = MoveVerticalSpeed;
+
+			if ( Input.GetKey( KeyCode.DownArrow ) )
+				ySpeed = -MoveVerticalSpeed;
+		}
 
 		// recompute depth based on height
 		float depth = transform.position.y;
@@ -206,6 +230,13 @@ public class Princess : MonoBehaviour
 		}
 	}
 
+	// update punch
+	public void UpdatePunch()
+	{
+		if ( playerAnimation.isPlaying == false )
+			SetFree();
+	}
+
 	// Fighting management
 	public void UpdateFight ()
 	{
@@ -217,33 +248,44 @@ public class Princess : MonoBehaviour
 			stamina += staminaRegen * Time.deltaTime;
 			if (stamina >= 1f) {
 				stamina = 1f;
-				if (state != PlayerState.Free) {
+				if (state == PlayerState.Resting) {
 					state = PlayerState.Free;
 					playerAnimation.CrossFade ("stand", 0.3f);
 					playerAnimation.CrossFadeQueued ("idle");
 					isRunning = false;
 				}
 			}
+		} else {
+			// hide princess during fight
+			Vector3 hiddenPos = transform.position;
+			hiddenPos.z = -1000f;
+			transform.position = hiddenPos;
 		}
 
 		if (GetAttackInput ()) {
-			if (state == PlayerState.Free) {
-				opponent = LevelManager.GetBestOpponent (this);
-				if (opponent) {
-					LevelManager.StartFight (this, opponent);
+			if ( (state == PlayerState.Free) || 
+			    ( (state == PlayerState.Punching ) && ( punchHitbox.IsPunchOver() ) ) ) {
+				// check if we have only 0-1 opponent around
+				List<Princess> opponents = new List<Princess>();
+				bool startMelee = LevelManager.IsMeleeAvailable(this, ref opponents);
+				if ( startMelee == false ) {
+					// only throw a punch
+					Punch();
+				} else {
+					// we have enough opponents to start a melee !
+					foreach ( Princess opponent in opponents ) {
+						LevelManager.StartFight(this, opponent);
+					}
 				}
 			}
 			
 			if (state == PlayerState.Fighting) {
-				attackAnimation.speed += attackAnimationSpeedIncrease;
-				if (attackAnimation.speed > attackAnimationSpeedMax)
-					attackAnimation.speed = attackAnimationSpeedMax;
-
-				opponent.stamina -= staminaLoss;
+				// resist stamina loss using mash
+				stamina += staminaMashResist;
 			}
 		}
 
-		if (state == PlayerState.Fighting && stamina <= 0f) {
+		if (stamina <= 0f) {
 			stamina = 0f;
 			state = PlayerState.Resting;
 			playerAnimation.CrossFade ("hit", 0.3f);
@@ -253,8 +295,25 @@ public class Princess : MonoBehaviour
 			scale.x = -scale.x;
 			playerAnimation.transform.localScale = scale;
 
-			LevelManager.LoseFight(this);
+			// un-hide the character
+			Vector3 unhiddenPos = transform.position;
+			unhiddenPos.z = transform.position.y;
+			transform.position = unhiddenPos;
+
+			//LevelManager.LoseFight(this);
 		}
+	}
+
+	// melee victory
+	public void WinFight() 
+	{
+		// un-hide the character
+		Vector3 unhiddenPos = transform.position;
+		unhiddenPos.z = transform.position.y;
+		transform.position = unhiddenPos;
+
+		// todo : play some sound/animation ?
+		SetFree();
 	}
 
 	public bool IsResting()
@@ -265,16 +324,34 @@ public class Princess : MonoBehaviour
 	// Detect AttackInput
 	bool GetAttackInput ()
 	{
-		if (index == 1 && Input.GetKeyDown (KeyCode.Space))
-			return true;
+		// TODO : SHOULD BE REMOVED...but there's a weird bug where the input is still active for a few frames ?
+		attackButtonCooldown -= Time.deltaTime;
+		if ( attackButtonCooldown <= 0.0f ) {
+			bool bAttackButton = false;
 
-		//return Input.GetButtonDown ("A_1");
-		return Input.GetButtonDown ("A_" + index.ToString ());
+			if (index == 1 && Input.GetKeyDown (KeyCode.Space))
+				bAttackButton = true;
+
+			if (index == 2 && Input.GetKeyDown (KeyCode.RightControl))
+				bAttackButton = true;
+
+			//return Input.GetButtonDown ("A_1");
+			bAttackButton |= Input.GetButtonDown ("A_" + index.ToString ());
+
+			if ( bAttackButton ) {
+				attackButtonCooldown = 0.05f;
+			}
+
+			return bAttackButton;
+		}
+
+		return false;
 	}
 
 	// Start a fight
 	public void StartFight (bool onRight)
 	{
+	//	return;
 		Vector3 vScale = playerAnimation.transform.localScale;
 		if (onRight) {
 			vScale.x = -Mathf.Abs (vScale.x);
@@ -288,6 +365,27 @@ public class Princess : MonoBehaviour
 		attackAnimation.speed = attackAnimationSpeedMin;
 	}
 
+	// throw a punch
+	public void Punch()
+	{
+		playerAnimation.CrossFade ("attack", 0.3f);
+		state = PlayerState.Punching;
+		attackAnimation.speed = attackAnimationSpeedMin;
+		punchHitbox.StartPunch();
+	}
+
+	// receive a hit
+	public void TakeHit(Princess puncher) {
+		stamina -= staminaPunchLoss;
+
+		// if we get killed, give all items to the puncher
+		if ( stamina <= 0.0f ) {
+			foreach (Item item in GetGrabbedItems())
+				LevelManager.GrabItem(puncher, item);
+			ResetItems();
+		}
+	}
+		
 	public float GetMatchScore ()
 	{
 		if (state == PlayerState.Resting)

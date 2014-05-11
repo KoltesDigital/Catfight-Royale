@@ -5,10 +5,60 @@ using System.Linq;
 
 public class MainLevel : MonoBehaviour
 {
-	private struct Fight
+	private class Fight
 	{
 		public List<Princess> fighters;
+		public float timer;
+
+		private float duration;
+		private MainLevel level;
 		
+		public Fight(float duration, MainLevel level) {
+			timer = 0.0f;
+			this.duration = duration;
+			this.level = level;
+		}
+
+		public void RestartFight() {
+			timer = 0.0f;
+		}
+
+		public void Update() {
+			timer += Time.deltaTime;
+
+			// everyone loses stamina during fights
+			foreach (Princess fighter in fighters ) {
+				// always keep stamina above 0 until the end of the fight
+				fighter.stamina = Mathf.Max( fighter.stamina - fighter.staminaLoss, 0.001f );
+				/*if ( fighter.index == 1 ) 
+					Debug.Log ( "" + fighter.index + " : " + fighter.stamina );*/
+			}
+
+			if ( timer >= duration ) {
+				// at the end of the timer, the one with the most stamina left wins
+				Princess winner = fighters.OrderByDescending(fighter => fighter.stamina).First();
+
+				// winner gets the loot
+				foreach (Princess loser in fighters ) {
+					if ( loser != winner ) {
+						foreach (Item item in loser.GetGrabbedItems())
+							level.GrabItem(winner, item);
+						loser.ResetItems();
+
+						loser.stamina = 0.0f;
+					}
+				}
+
+				winner.stamina = Mathf.Min( winner.stamina, 1.0f );
+				winner.WinFight();
+				level.cloud.EndFight();
+			}
+		}
+
+		public bool IsOver() {
+			return ( timer >= duration );
+		}
+
 		public float CenterX()
 		{
 			return fighters.Select (fighter => fighter.transform.position.x).Sum () / fighters.Count;
@@ -33,6 +83,7 @@ public class MainLevel : MonoBehaviour
 
 	public float announceDuration = 4.0f;
 	public float announceFadeDuration = 0.5f;
+	public float scoreDisplayDuration = 2.0f;
 
 	public float grabbingDuration = 1.5f;
 	public float congratulationsDuration = 4.0f;
@@ -51,6 +102,7 @@ public class MainLevel : MonoBehaviour
 	public Cloud cloud;
 	public float fightStartDistance = 2.0f;
 	public float fightPosOffset = 1.0f;
+	public float fightDuration = 4.0f;
 	private List<Fight> fights = new List<Fight>();
 
 	// Timer management
@@ -106,6 +158,12 @@ public class MainLevel : MonoBehaviour
 			}
 
 			gui.SetTimeLeft(gameCountdown);
+
+			// update fights
+			foreach (Fight fight in fights ) {
+				fight.Update();
+			}
+			fights.RemoveAll( fight => fight.IsOver() );
 		}
 		
 		currentCountdown -= Time.deltaTime;
@@ -116,6 +174,10 @@ public class MainLevel : MonoBehaviour
 			break;
 
 		case State.King:
+			if (currentCountdown <= scoreDisplayDuration ) {
+				gui.ShowScores (false);
+			}
+
 			if (currentCountdown <= 0) {
 				currentState = State.Balloon;
 				currentCountdown = announceDuration;
@@ -132,7 +194,6 @@ public class MainLevel : MonoBehaviour
 				currentState = State.Search;
 				mainCamera.SetGameplayMode ();
 
-				gui.ShowScores (false);
 				gui.ShowTime (true);
 
 				audio.clip = searchMusic;
@@ -149,6 +210,7 @@ public class MainLevel : MonoBehaviour
 				mainCamera.SetGameplayMode ();
 				gui.ShowTime (true);
 			}
+
 			break;
 
 		case State.Congratulations:
@@ -341,6 +403,38 @@ public class MainLevel : MonoBehaviour
 		
 		return bestOpponent;
 	}
+
+	// Return number of opponents near the princess
+	public bool IsMeleeAvailable(Princess player, ref List<Princess> opponents)
+	{
+		foreach (Princess otherPlayer in players) {
+			if ( (otherPlayer != player) && (otherPlayer.IsResting() == false) ) {
+				Vector3 opponentOffset = player.transform.position - otherPlayer.transform.position; 
+				opponentOffset.z = 0f;
+				if ( opponentOffset.magnitude < fightStartDistance ) 
+					opponents.Add( otherPlayer );
+			}
+		}
+		
+		return ( opponents.Count > 1 );
+	}
+
+	// Hit neighbor princesses
+	public bool HitOpponents(Princess player, Collider2D hitbox)
+	{
+		int numHits = 0;
+		
+		foreach (Princess otherPlayer in players) {
+			if (otherPlayer != player) {
+				if ( ( otherPlayer.IsResting() == false ) && ( hitbox.OverlapPoint( otherPlayer.transform.position ) ) ) {
+				    numHits++;
+					otherPlayer.TakeHit( player );
+				}
+			}
+		}
+		
+		return ( numHits > 0 );
+	}
 	
 	private Princess GetBestOpponentInFight(Fight fight)
 	{
@@ -375,13 +469,14 @@ public class MainLevel : MonoBehaviour
 	{
 		foreach (Fight fight in fights) {
 			if (AddFighterToFight(fight, a, b) || AddFighterToFight(fight, b, a)) {
+				fight.RestartFight();
 				cloud.BeginFight(fight.fighters);
 				return;
 			}
 		}
 
 		// no existing fight with a and b, creating a new one
-		Fight newFight = new Fight();
+		Fight newFight = new Fight(fightDuration, this);
 		newFight.fighters = new List<Princess> ();
 		newFight.fighters.Add(a);
 		newFight.fighters.Add(b);
@@ -401,9 +496,11 @@ public class MainLevel : MonoBehaviour
 
 		a.StartFight (aOnRight);
 		b.StartFight (!aOnRight);
+
+		cloud.BeginFight(newFight.fighters);
 	}
 
-	public void LoseFight(Princess player)
+/*	public void LoseFight(Princess player)
 	{
 		foreach (Fight fight in fights.ToList()) {
 			if (fight.fighters.Remove(player)) {
@@ -421,5 +518,5 @@ public class MainLevel : MonoBehaviour
 				cloud.EndFight();
 			}
 		}
-	}
+	}*/
 }
