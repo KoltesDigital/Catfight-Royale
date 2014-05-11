@@ -27,6 +27,7 @@ public class MainCamera : MonoBehaviour
 	public float gameplayMarginX = 10.0f;
 	public float gameplayMarginY = 10.0f;
 	public float gameplaySizeMin = 15.0f;
+	public Vector3 gameplayCamOffset;
 	public float MultiplierX = 0.4f;
 	public float MultiplierY = 0.85f;
 
@@ -118,7 +119,7 @@ public class MainCamera : MonoBehaviour
 			float maxDiff = Mathf.Max (xDiff + gameplayMarginX, yDiff + gameplayMarginY);
 
 			targetSize = Mathf.Max (maxDiff, gameplaySizeMin);
-			targetPosition = new Vector3 (xCenter, yCenter, 0f);
+			targetPosition = new Vector3 (xCenter, yCenter, 0f) + gameplayCamOffset;
 			break;
 		}
 
