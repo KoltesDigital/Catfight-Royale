@@ -11,6 +11,11 @@ public class PunchHitbox : MonoBehaviour {
 	public float activeTimer = 0.3f;
 	public float deactiveTimer = 1.0f;
 
+	// sound
+	public AudioClip [] clapSounds;
+	public float clapPitchMin = 0.8f;
+	public float clapPitchMax = 1.2f;
+
 	// Use this for initialization
 	void Start () {
 		thisPrincess = transform.parent.parent.GetComponent<Princess>();
@@ -27,6 +32,7 @@ public class PunchHitbox : MonoBehaviour {
 				bool hitOpponents = thisPrincess.LevelManager.HitOpponents( thisPrincess, collider2D );
 
 				if ( hitOpponents ) {
+					PlayClapSound();
 					boxActive = false;
 					timer = -1.0f;
 				}
@@ -41,5 +47,11 @@ public class PunchHitbox : MonoBehaviour {
 
 	public bool IsPunchOver() {
 		return ( ( timer < 0.0f ) || ( timer > deactiveTimer ) );
+	}
+
+	public void PlayClapSound() {
+		audio.clip = clapSounds[ Random.Range( 0, clapSounds.Length ) ];
+		audio.pitch = Random.Range( clapPitchMin, clapPitchMax );
+		audio.Play();
 	}
 }

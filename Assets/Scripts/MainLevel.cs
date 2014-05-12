@@ -72,6 +72,7 @@ public class MainLevel : MonoBehaviour
 		Balloon,
 		Search,
 		Grabbing,
+		PutObject,
 		BringBack,
 		Congratulations,
 		End
@@ -86,6 +87,7 @@ public class MainLevel : MonoBehaviour
 	public float scoreDisplayDuration = 2.0f;
 
 	public float grabbingDuration = 1.5f;
+	public float putObjectDuration = 1.0f;
 	public float congratulationsDuration = 4.0f;
 	public float endDuration = 4.0f;
 
@@ -116,6 +118,12 @@ public class MainLevel : MonoBehaviour
 	public AudioClip fightMusic;
 	public AudioClip getItemSfx;
 
+	// King sounds
+	public AudioClip[] kingCongratsSounds;
+	public AudioClip[] kingAnnounceSounds;
+	public AudioClip[] kingVictorySounds;
+	private AudioSource kingAudio;
+
 	// camera
 	public MainCamera mainCamera;
 	
@@ -143,6 +151,8 @@ public class MainLevel : MonoBehaviour
 		}
 		
 		mainCamera.SetPlayers(players);
+
+		kingAudio = transform.FindChild( "King" ).audio;
 
 		ShowMenu ();
 	}
@@ -182,6 +192,7 @@ public class MainLevel : MonoBehaviour
 				currentState = State.Balloon;
 				currentCountdown = announceDuration;
 				mainCamera.SetBalloonMode ();
+				PlayAnnounceSound();
 			}
 			break;
 
@@ -205,21 +216,39 @@ public class MainLevel : MonoBehaviour
 		case State.Grabbing:
 			if (currentCountdown <= 0) {
 				currentPlayer.SetFree ();
-				currentState = State.BringBack;
+				currentState = State.PutObject;
 
+				if (audio.clip != fightMusic) {
+					audio.clip = fightMusic;
+					audio.loop = true;
+					audio.Play ();
+				}
+
+				currentCountdown = putObjectDuration;
+			}
+
+			break;
+
+		case State.PutObject:
+			if (currentCountdown <= 0) {
+
+				currentState = State.BringBack;
+				
 				mainCamera.SetGameplayMode ();
 				gui.ShowTime (true);
 			}
-
+			
 			break;
 
 		case State.Congratulations:
 			if (currentCountdown <= 0) {
 				if (items.Count == 0) {
 					EndGame ();
+					PlayVictorySound();
 				} else {
 					// launch next round 
 					StartRound ();
+					PlayCongratsSound();
 				}
 			}
 			break;
@@ -335,13 +364,6 @@ public class MainLevel : MonoBehaviour
 	public void GrabItem (Princess player, Item item)
 	{
 		currentItems.Remove (item);
-		
-		if (audio.clip != fightMusic) {
-			audio.clip = fightMusic;
-			audio.loop = true;
-			audio.Play ();
-		} else
-			audio.PlayOneShot (getItemSfx);
 
 		currentState = State.Grabbing;
 		currentCountdown = grabbingDuration;
@@ -350,6 +372,8 @@ public class MainLevel : MonoBehaviour
 		player.SetGrabbing (item);
 		mainCamera.SetPlayerMode (player.gameObject, true);
 		gui.ShowTime (false);
+
+		audio.Stop();
 	}
 
 	// The Item was brought back ! End of the round
@@ -498,6 +522,25 @@ public class MainLevel : MonoBehaviour
 		b.StartFight (!aOnRight);
 
 		cloud.BeginFight(newFight.fighters);
+	}
+
+	public void PlayCongratsSound() {
+		kingAudio.clip = kingCongratsSounds[ Random.Range( 0, kingCongratsSounds.Length ) ];
+		kingAudio.Play();
+	}
+
+	public void PlayAnnounceSound() {
+		kingAudio.clip = kingAnnounceSounds[ Random.Range( 0, kingAnnounceSounds.Length ) ];
+		kingAudio.Play();
+	}
+
+	public void PlayVictorySound() {
+		kingAudio.clip = kingVictorySounds[ Random.Range( 0, kingVictorySounds.Length ) ];
+		kingAudio.Play();
+	}
+
+	public bool FightingMode() { 
+		return ( currentState == State.BringBack );
 	}
 
 /*	public void LoseFight(Princess player)

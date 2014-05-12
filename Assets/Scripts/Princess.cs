@@ -57,6 +57,24 @@ public class Princess : MonoBehaviour
 
 	private float attackButtonCooldown = 0.0f;
 
+	// sound
+	public AudioClip[] attackSounds;
+	public AudioClip[] attackSoundsHysteria;
+	public float attackPitchMin = 0.8f;
+	public float attackPitchMax = 1.3f;
+
+	public AudioClip[] koSounds;
+	public AudioClip[] koSoundsHysteria;
+
+	public AudioClip[] grabItemSounds;
+	public AudioClip[] grabItemSoundsHysteria;
+
+	public AudioClip[] winnerSounds;
+
+	public float fightSoundDelayMin = 0.3f;
+	public float fightSoundDelayMax = 1.0f;
+	private float fightSoundCountdown = 0.0f;
+
 	// Use this for initialization
 	void Start ()
 	{
@@ -126,6 +144,8 @@ public class Princess : MonoBehaviour
 		Vector3 scale = item.transform.localScale;
 		scale.x = Mathf.Abs (scale.x);
 		item.transform.localScale = scale;
+
+		PlayGrabItemSound();
 	}
 	
 	public void SetSuccess ()
@@ -223,7 +243,8 @@ public class Princess : MonoBehaviour
 			if (throneOffset.magnitude < BringBackItemDistance) {
 				LevelManager.BringBackItems (this, grabbedItems);
 							
-				transform.position = thronePosition;
+				//transform.position = thronePosition;
+				PlayWinnerSound();
 
 				SetFree ();
 			}
@@ -240,9 +261,9 @@ public class Princess : MonoBehaviour
 	// Fighting management
 	public void UpdateFight ()
 	{
-		attackAnimation.speed -= Time.deltaTime * attackAnimationSpeedDecreaseRate;
+		/*attackAnimation.speed -= Time.deltaTime * attackAnimationSpeedDecreaseRate;
 		if (attackAnimation.speed < attackAnimationSpeedMin)
-			attackAnimation.speed = attackAnimationSpeedMin;
+			attackAnimation.speed = attackAnimationSpeedMin;*/
 
 		if (state != PlayerState.Fighting) {
 			stamina += staminaRegen * Time.deltaTime;
@@ -260,6 +281,17 @@ public class Princess : MonoBehaviour
 			Vector3 hiddenPos = transform.position;
 			hiddenPos.z = -1000f;
 			transform.position = hiddenPos;
+
+			// play a random sound between shout and clap
+			fightSoundCountdown -= Time.deltaTime;
+			if ( fightSoundCountdown < 0.0f ) {
+				if ( Random.value > 0.5f )
+					PlayAttackSound();
+				else
+					punchHitbox.PlayClapSound();
+
+				fightSoundCountdown = Random.Range( fightSoundDelayMin, fightSoundDelayMax );
+			}
 		}
 
 		if (GetAttackInput ()) {
@@ -299,6 +331,8 @@ public class Princess : MonoBehaviour
 			Vector3 unhiddenPos = transform.position;
 			unhiddenPos.z = transform.position.y;
 			transform.position = unhiddenPos;
+
+			PlayerKOSound();
 
 			//LevelManager.LoseFight(this);
 		}
@@ -363,15 +397,18 @@ public class Princess : MonoBehaviour
 		state = PlayerState.Fighting;
 		playerAnimation.CrossFade ("attack", 0.3f);
 		attackAnimation.speed = attackAnimationSpeedMin;
+
+		fightSoundCountdown = Random.Range( 0.0f, fightSoundDelayMax );
 	}
 
 	// throw a punch
 	public void Punch()
 	{
-		playerAnimation.CrossFade ("attack", 0.3f);
+		playerAnimation.CrossFadeQueued("attack", 0.3f, QueueMode.PlayNow);
 		state = PlayerState.Punching;
 		attackAnimation.speed = attackAnimationSpeedMin;
 		punchHitbox.StartPunch();
+		PlayAttackSound();
 	}
 
 	// receive a hit
@@ -397,5 +434,41 @@ public class Princess : MonoBehaviour
 	public List<Item> GetGrabbedItems()
 	{
 		return grabbedItems;
+	}
+
+	public void PlayAttackSound() {
+		if ( LevelManager.FightingMode() == false ) {
+			audio.clip = attackSounds[ Random.Range( 0, attackSounds.Length ) ];
+			audio.pitch = Random.Range( attackPitchMin, attackPitchMax );
+		} else {
+			audio.clip = attackSoundsHysteria[ Random.Range( 0, attackSoundsHysteria.Length ) ];
+		}
+
+		audio.Play();
+	}
+
+	public void PlayerKOSound() {
+		if ( LevelManager.FightingMode() == false ) {
+			audio.clip = koSounds[ Random.Range( 0, koSounds.Length ) ];
+		} else {
+			audio.clip = koSoundsHysteria[ Random.Range( 0, koSoundsHysteria.Length ) ];
+		}
+
+		audio.Play();
+	}
+
+	public void PlayGrabItemSound() {
+		if ( LevelManager.FightingMode() == false ) {
+			audio.clip = grabItemSounds[ Random.Range( 0, grabItemSounds.Length ) ];
+		} else {
+			audio.clip = grabItemSoundsHysteria[ Random.Range( 0, grabItemSoundsHysteria.Length ) ];
+		}
+
+		audio.Play();
+	}
+
+	public void PlayWinnerSound() {
+		audio.clip = winnerSounds[ Random.Range( 0, winnerSounds.Length ) ];
+		audio.Play();
 	}
 }
