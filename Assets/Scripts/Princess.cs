@@ -227,7 +227,7 @@ public class Princess : MonoBehaviour
 				
 		foreach (Item item in LevelManager.GetCurrentItems()) {
 			Vector3 itemOffset = transform.position - item.transform.position;
-			itemOffset.z = 0.0f;
+			itemOffset.y = 0.0f;
 
 			if (itemOffset.magnitude < GrabItemDistance) {
 				LevelManager.GrabItem (this, item);
@@ -238,7 +238,7 @@ public class Princess : MonoBehaviour
 			// Did we get to the throne ?
 			Vector3 thronePosition = LevelManager.queenThrone.transform.position;
 			Vector3 throneOffset = transform.position - thronePosition;
-			throneOffset.z = 0.0f;
+			throneOffset.y = 0.0f;
 						
 			if (throneOffset.magnitude < BringBackItemDistance) {
 				LevelManager.BringBackItems (this, grabbedItems);
