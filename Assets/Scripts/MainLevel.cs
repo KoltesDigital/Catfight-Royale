@@ -298,8 +298,10 @@ public class MainLevel : MonoBehaviour
 	void StartGame ()
 	{
 		items.Clear ();
-		foreach (GameObject item in GameObject.FindGameObjectsWithTag("Item")) {
-			items.Add (item.GetComponent<Item> ());
+		foreach (GameObject itemObject in GameObject.FindGameObjectsWithTag("Item")) {
+			Item item = itemObject.GetComponent<Item> ();
+			item.Reset();
+			items.Add (item);
 		}
 
 		List<GameObject> startPoints = GameObject.FindGameObjectsWithTag ("Start point").ToList();
@@ -310,6 +312,7 @@ public class MainLevel : MonoBehaviour
 			startPoints.RemoveAt (startIndex);
 
 			players[i].transform.position = startPoint.position;
+			players[i].score = 0;
 
 			gui.SetScore (i, 0);
 		}

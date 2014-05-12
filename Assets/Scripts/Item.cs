@@ -12,5 +12,25 @@ public class Item : MonoBehaviour
 	public float grabbedRotation;
 	public string grabbedBoneName;
 
+	// associated thinking balloon
 	public Sprite balloon;
+
+	// start position used for resetting
+	private Transform startParent;
+	private Vector3 startPosition;
+	private Quaternion startRotation;
+
+	void Start ()
+	{
+		startParent = transform.parent;
+		startPosition = transform.position;
+		startRotation = transform.rotation;
+	}
+
+	public void Reset()
+	{
+		transform.parent = startParent;
+		transform.position = startPosition;
+		transform.rotation = startRotation;
+	}
 }
