@@ -59,7 +59,7 @@ public class Cloud : MonoBehaviour
 		clampSpeed = 1;
 		
 		float xPosition = fighters.Select (fighter => fighter.transform.position.x).Sum () / fighters.Count ();
-		float yPosition = fighters.Select (fighter => fighter.transform.position.x).Sum () / fighters.Count () + cloudOffsetY;
+		float yPosition = fighters.Select (fighter => fighter.transform.position.y).Sum () / fighters.Count () + cloudOffsetY;
 		transform.position = new Vector3 (xPosition, yPosition, -40);
 	}
 	

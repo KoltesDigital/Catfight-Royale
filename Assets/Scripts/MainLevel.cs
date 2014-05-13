@@ -21,22 +21,17 @@ public class MainLevel : MonoBehaviour
 
 		public void RestartFight() {
 			timer = 0.0f;
+			foreach (Princess fighter in fighters ) {
+				fighter.numMeleeMashes = 0;
+			}
 		}
 
 		public void Update() {
 			timer += Time.deltaTime;
 
-			// everyone loses stamina during fights
-			foreach (Princess fighter in fighters ) {
-				// always keep stamina above 0 until the end of the fight
-				fighter.stamina = Mathf.Max( fighter.stamina - fighter.staminaLoss, 0.001f );
-				/*if ( fighter.index == 1 ) 
-					Debug.Log ( "" + fighter.index + " : " + fighter.stamina );*/
-			}
-
 			if ( timer >= duration ) {
 				// at the end of the timer, the one with the most stamina left wins
-				Princess winner = fighters.OrderByDescending(fighter => fighter.stamina).First();
+				Princess winner = fighters.OrderByDescending(fighter => fighter.numMeleeMashes).First();
 
 				// winner gets the loot
 				foreach (Princess loser in fighters ) {
@@ -45,11 +40,11 @@ public class MainLevel : MonoBehaviour
 							level.GrabItem(winner, item);
 						loser.ResetItems();
 
-						loser.stamina = 0.0f;
+						loser.LoseFight();
 					}
 				}
 
-				winner.stamina = Mathf.Min( winner.stamina, 1.0f );
+				winner.stamina = Mathf.Min( winner.stamina, 0.5f );
 				winner.WinFight();
 				level.cloud.EndFight();
 			}
@@ -346,8 +341,10 @@ public class MainLevel : MonoBehaviour
 
 		balloon.sprite = item.balloon;
 
-		foreach (Princess player in players)
+		foreach (Princess player in players) {
 			player.stamina = 1;
+			player.SetFree();
+		}
 	}
 	
 	void EndGame ()
@@ -366,6 +363,10 @@ public class MainLevel : MonoBehaviour
 
 	public void GrabItem (Princess player, Item item)
 	{
+		if ( FightingMode() == false ) {
+			audio.Stop();
+		}
+
 		currentItems.Remove (item);
 
 		currentState = State.Grabbing;
@@ -375,8 +376,6 @@ public class MainLevel : MonoBehaviour
 		player.SetGrabbing (item);
 		mainCamera.SetPlayerMode (player.gameObject, true);
 		gui.ShowTime (false);
-
-		audio.Stop();
 	}
 
 	// The Item was brought back ! End of the round
@@ -388,13 +387,15 @@ public class MainLevel : MonoBehaviour
 
 		foreach (Princess everyPlayer in players) {
 			everyPlayer.ResetItems ();
-			/*
+
 			if (everyPlayer == player)
 				everyPlayer.SetSuccess ();
 			else
 				everyPlayer.SetFail ();
-			*/
+
 		}
+
+		player.SetSuccess();
 
 		mainCamera.SetPlayerMode (player.gameObject);
 		gui.ShowScores (true);

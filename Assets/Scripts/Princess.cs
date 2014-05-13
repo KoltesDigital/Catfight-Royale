@@ -25,6 +25,8 @@ public class Princess : MonoBehaviour
 	// Move Parameters
 	public float MoveHorizontalSpeed = 0.65f;
 	public float MoveVerticalSpeed = 0.25f;
+	public float MoveSpeedFactorSearch = 0.75f;
+	public float MoveSpeedFactorItem = 0.5f;
 
 	// Grab Parameters
 	public float GrabItemDistance = 1.0f;
@@ -47,6 +49,7 @@ public class Princess : MonoBehaviour
 	[HideInInspector]
 	public float stamina = 1.0f;
 	public float staminaPunchLoss = 0.2f;
+	public int numMeleeMashes = 0;
 	public float staminaLoss = 0.05f;
 	public float staminaRegen = 0.1f;
 	public float staminaMashResist = 0.1f;
@@ -150,12 +153,12 @@ public class Princess : MonoBehaviour
 	
 	public void SetSuccess ()
 	{
-		playerAnimation.CrossFade ("success", 0.3f);
+		playerAnimation.CrossFadeQueued ("success", 0.3f);
 	}
 	
 	public void SetFail ()
 	{
-		playerAnimation.CrossFade ("fail", 0.3f);
+		playerAnimation.CrossFadeQueued ("fail", 0.3f);
 	}
 
 	public void LostItem (Item item)
@@ -197,6 +200,17 @@ public class Princess : MonoBehaviour
 
 			if ( Input.GetKey( KeyCode.DownArrow ) )
 				ySpeed = -MoveVerticalSpeed;
+		}
+
+		// add speed multipliers depending on situation
+		if ( LevelManager.FightingMode() == false ) {
+			// Search mode
+			xSpeed *= MoveSpeedFactorSearch;
+			ySpeed *= MoveSpeedFactorSearch;
+		} else if (grabbedItems.Count > 0) {
+			// item mode
+			xSpeed *= MoveSpeedFactorItem;
+			ySpeed *= MoveSpeedFactorItem;
 		}
 
 		// recompute depth based on height
@@ -266,14 +280,16 @@ public class Princess : MonoBehaviour
 			attackAnimation.speed = attackAnimationSpeedMin;*/
 
 		if (state != PlayerState.Fighting) {
-			stamina += staminaRegen * Time.deltaTime;
-			if (stamina >= 1f) {
-				stamina = 1f;
-				if (state == PlayerState.Resting) {
-					state = PlayerState.Free;
-					playerAnimation.CrossFade ("stand", 0.3f);
-					playerAnimation.CrossFadeQueued ("idle");
-					isRunning = false;
+			if (state == PlayerState.Resting) {
+				stamina += staminaRegen * Time.deltaTime;
+				if (stamina >= 1f) {
+					stamina = 1f;
+					if (state == PlayerState.Resting) {
+						state = PlayerState.Free;
+						playerAnimation.CrossFade ("stand", 0.3f);
+						playerAnimation.CrossFadeQueued ("idle");
+						isRunning = false;
+					}
 				}
 			}
 		} else {
@@ -313,11 +329,12 @@ public class Princess : MonoBehaviour
 			
 			if (state == PlayerState.Fighting) {
 				// resist stamina loss using mash
-				stamina += staminaMashResist;
+				//stamina += staminaMashResist;
+				numMeleeMashes++;
 			}
 		}
 
-		if (stamina <= 0f) {
+		/*if (stamina <= 0f) {
 			stamina = 0f;
 			state = PlayerState.Resting;
 			playerAnimation.CrossFade ("hit", 0.3f);
@@ -335,7 +352,7 @@ public class Princess : MonoBehaviour
 			PlayerKOSound();
 
 			//LevelManager.LoseFight(this);
-		}
+		}*/
 	}
 
 	// melee victory
@@ -348,6 +365,26 @@ public class Princess : MonoBehaviour
 
 		// todo : play some sound/animation ?
 		SetFree();
+	}
+
+	// melee defeat
+	public void LoseFight() 
+	{
+		stamina = 0f;
+		state = PlayerState.Resting;
+		playerAnimation.CrossFade ("hit", 0.3f);
+		playerAnimation.PlayQueued ("rest");
+		
+		Vector3 scale = playerAnimation.transform.localScale;
+		scale.x = -scale.x;
+		playerAnimation.transform.localScale = scale;
+		
+		// un-hide the character
+		Vector3 unhiddenPos = transform.position;
+		unhiddenPos.z = transform.position.y;
+		transform.position = unhiddenPos;
+		
+		PlayerKOSound();
 	}
 
 	public bool IsResting()
@@ -399,6 +436,8 @@ public class Princess : MonoBehaviour
 		attackAnimation.speed = attackAnimationSpeedMin;
 
 		fightSoundCountdown = Random.Range( 0.0f, fightSoundDelayMax );
+
+		numMeleeMashes = 0;
 	}
 
 	// throw a punch
@@ -420,6 +459,8 @@ public class Princess : MonoBehaviour
 			foreach (Item item in GetGrabbedItems())
 				LevelManager.GrabItem(puncher, item);
 			ResetItems();
+
+			LoseFight();
 		}
 	}
 		
