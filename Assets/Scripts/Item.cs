@@ -27,7 +27,7 @@ public class Item : MonoBehaviour
 		startRotation = transform.rotation;
 	}
 
-	public void Reset()
+	public void ResetPosition()
 	{
 		transform.parent = startParent;
 		transform.position = startPosition;

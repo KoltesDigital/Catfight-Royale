@@ -17,7 +17,8 @@ public class Princess : MonoBehaviour
 		Free,
 		Punching,
 		Fighting,
-		Resting
+		Resting,
+		Blocked
 	}
 
 	private PlayerState state = PlayerState.Free;
@@ -132,7 +133,7 @@ public class Princess : MonoBehaviour
 
 	public void SetGrabbing (Item item)
 	{
-		playerAnimation.CrossFade ("take_loop", 0.3f);
+		playerAnimation.CrossFade ("take", 0.3f);
 		
 		grabbingItem = item;
 		
@@ -153,12 +154,14 @@ public class Princess : MonoBehaviour
 	
 	public void SetSuccess ()
 	{
-		playerAnimation.CrossFadeQueued ("success", 0.3f);
+		playerAnimation.CrossFade ("success", 0.3f);
+		state = PlayerState.Blocked;
 	}
 	
 	public void SetFail ()
 	{
-		playerAnimation.CrossFadeQueued ("fail", 0.3f);
+		playerAnimation.CrossFade ("fail", 0.3f);
+		state = PlayerState.Blocked;
 	}
 
 	public void LostItem (Item item)
@@ -259,8 +262,6 @@ public class Princess : MonoBehaviour
 							
 				//transform.position = thronePosition;
 				PlayWinnerSound();
-
-				SetFree ();
 			}
 		}
 	}
@@ -364,9 +365,8 @@ public class Princess : MonoBehaviour
 		transform.position = unhiddenPos;
 
 		// todo : play some sound/animation ?
-		SetFree();
 	}
-
+	
 	// melee defeat
 	public void LoseFight() 
 	{
@@ -385,6 +385,11 @@ public class Princess : MonoBehaviour
 		transform.position = unhiddenPos;
 		
 		PlayerKOSound();
+	}
+
+	public void WinGame() 
+	{
+		playerAnimation.CrossFade ("victory", 0.3f);
 	}
 
 	public bool IsResting()
@@ -443,7 +448,7 @@ public class Princess : MonoBehaviour
 	// throw a punch
 	public void Punch()
 	{
-		playerAnimation.CrossFadeQueued("attack", 0.3f, QueueMode.PlayNow);
+		playerAnimation.CrossFade("attack", 0.3f);
 		state = PlayerState.Punching;
 		attackAnimation.speed = attackAnimationSpeedMin;
 		punchHitbox.StartPunch();

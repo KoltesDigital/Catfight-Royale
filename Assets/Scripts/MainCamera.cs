@@ -11,6 +11,7 @@ public class MainCamera : MonoBehaviour
 		King,
 		Balloon,
 		Player,
+		Winner,
 		Gameplay
 	}
 
@@ -28,12 +29,16 @@ public class MainCamera : MonoBehaviour
 	public float gameplayMarginY = 10.0f;
 	public float gameplaySizeMin = 15.0f;
 	public Vector3 gameplayCamOffset;
-	public float MultiplierX = 0.4f;
-	public float MultiplierY = 0.85f;
-
+	public float gameplayMultiplierX = 0.4f;
+	public float gameplayMultiplierY = 0.85f;
+	
 	public float playerCameraSize = 8.0f;
+	public float playerCameraOffsetY = 4.0f;
 	public float playerGrabCameraOffsetY = 10.0f;
 	public float playerHeight = 10.0f;
+	
+	public float winnerCameraSize = 10.0f;
+	public float winnerGrabCameraOffsetY = 12.0f;
 
 	public float reactivity = 2.5f;
 
@@ -58,12 +63,18 @@ public class MainCamera : MonoBehaviour
 	{
 		mode = Mode.Balloon;
 	}
-
+	
 	public void SetPlayerMode (GameObject playerObject, bool grab = false)
 	{
 		mode = Mode.Player;
 		playerTarget = playerObject;
 		playerGrab = grab;
+	}
+	
+	public void SetWinnerMode (GameObject playerObject)
+	{
+		mode = Mode.Winner;
+		playerTarget = playerObject;
 	}
 
 	public void SetGameplayMode ()
@@ -91,11 +102,17 @@ public class MainCamera : MonoBehaviour
 			targetPosition = balloonCameraTarget.transform.position;
 			targetSize = balloonCameraTarget.orthographicSize;
 			break;
-
+			
 		case Mode.Player:
 			targetPosition = playerTarget.transform.position;
-			targetPosition.y += playerGrab ? playerGrabCameraOffsetY : playerHeight / 2;
+			targetPosition.y += playerGrab ? playerGrabCameraOffsetY : playerCameraOffsetY;
 			targetSize = playerCameraSize;
+			break;
+			
+		case Mode.Winner:
+			targetPosition = playerTarget.transform.position;
+			targetPosition.y += winnerGrabCameraOffsetY;
+			targetSize = winnerCameraSize;
 			break;
 
 		default: // case CameraState.Gameplay:
@@ -105,16 +122,16 @@ public class MainCamera : MonoBehaviour
 			float[] yPositions = players.Select(player => player.position.y).ToArray();
 			
 			float xMin = Mathf.Min (xPositions);
-			float xMax = Mathf.Max (xPositions) + playerHeight;
+			float xMax = Mathf.Max (xPositions);
 			
 			float yMin = Mathf.Min (yPositions);
-			float yMax = Mathf.Max (yPositions);
+			float yMax = Mathf.Max (yPositions) + playerHeight;
 			
 			float xCenter = Mathf.Lerp (xMin, xMax, 0.5f);
 			float yCenter = Mathf.Lerp (yMin, yMax, 0.5f);
 
-			float xDiff = Mathf.Abs (xMax - xMin) * MultiplierX;
-			float yDiff = Mathf.Abs (yMax - yMin) * MultiplierY;
+			float xDiff = Mathf.Abs (xMax - xMin) * gameplayMultiplierX;
+			float yDiff = Mathf.Abs (yMax - yMin) * gameplayMultiplierY;
 
 			float maxDiff = Mathf.Max (xDiff + gameplayMarginX, yDiff + gameplayMarginY);
 

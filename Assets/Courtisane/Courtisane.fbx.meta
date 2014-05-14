@@ -88,6 +88,7 @@ ModelImporter:
     7400016: take_loop
     7400018: success
     7400020: fail
+    7400022: victory
     9500000: //RootNode
     11100000: //RootNode
     13700000: bras
@@ -477,7 +478,7 @@ ModelImporter:
       name: stand
       takeName: stand
       firstFrame: 0
-      lastFrame: 16
+      lastFrame: 37
       wrapMode: 1
       orientationOffsetY: 0
       level: 0
@@ -549,78 +550,6 @@ ModelImporter:
       name: take
       takeName: take
       firstFrame: 0
-      lastFrame: 24
-      wrapMode: 1
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask:
-      - path: 
-        weight: 1
-      - path: Armature
-        weight: 1
-      - path: Armature/Root
-        weight: 1
-      - path: Armature/Root/Dress_T
-        weight: 1
-      - path: Armature/Root/Dress_T/Dress_B
-        weight: 1
-      - path: Armature/Root/Torso_M
-        weight: 1
-      - path: Armature/Root/Torso_M/Torso_T
-        weight: 1
-      - path: Armature/Root/Torso_M/Torso_T/Neck
-        weight: 1
-      - path: Armature/Root/Torso_M/Torso_T/Neck/Head
-        weight: 1
-      - path: Armature/Root/Torso_M/Torso_T/Shoulder_L
-        weight: 1
-      - path: Armature/Root/Torso_M/Torso_T/Shoulder_L/Arm_L
-        weight: 1
-      - path: Armature/Root/Torso_M/Torso_T/Shoulder_L/Arm_L/Forearm_L
-        weight: 1
-      - path: Armature/Root/Torso_M/Torso_T/Shoulder_L/Arm_L/Forearm_L/Wrist_L
-        weight: 1
-      - path: Armature/Root/Torso_M/Torso_T/Shoulder_R
-        weight: 1
-      - path: Armature/Root/Torso_M/Torso_T/Shoulder_R/Arm_R
-        weight: 1
-      - path: Armature/Root/Torso_M/Torso_T/Shoulder_R/Arm_R/Forearm_R
-        weight: 1
-      - path: Armature/Root/Torso_M/Torso_T/Shoulder_R/Arm_R/Forearm_R/Wrist_R
-        weight: 1
-      - path: bras_L
-        weight: 1
-      - path: bras_R
-        weight: 1
-      - path: buste
-        weight: 1
-      - path: robe
-        weight: 1
-      - path: tete
-        weight: 1
-      - path: volant
-        weight: 1
-      maskType: 0
-      maskSource: {instanceID: 0}
-    - serializedVersion: 16
-      name: take_loop
-      takeName: take_loop
-      firstFrame: 0
       lastFrame: 12
       wrapMode: 2
       orientationOffsetY: 0
@@ -664,8 +593,6 @@ ModelImporter:
       - path: Armature/Root/Torso_M/Torso_T/Shoulder_L/Arm_L
         weight: 1
       - path: Armature/Root/Torso_M/Torso_T/Shoulder_L/Arm_L/Forearm_L
-        weight: 1
-      - path: Armature/Root/Torso_M/Torso_T/Shoulder_L/Arm_L/Forearm_L/Grab
         weight: 1
       - path: Armature/Root/Torso_M/Torso_T/Shoulder_L/Arm_L/Forearm_L/Wrist_L
         weight: 1
@@ -769,7 +696,81 @@ ModelImporter:
       name: fail
       takeName: fail
       firstFrame: 0
-      lastFrame: 18
+      lastFrame: 30
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Root
+        weight: 1
+      - path: Armature/Root/Dress_T
+        weight: 1
+      - path: Armature/Root/Dress_T/Dress_B
+        weight: 1
+      - path: Armature/Root/Torso_M
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Neck
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Neck/Head
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_L
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_L/Arm_L
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_L/Arm_L/Forearm_L
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_L/Arm_L/Forearm_L/Grab
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_L/Arm_L/Forearm_L/Wrist_L
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_R
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_R/Arm_R
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_R/Arm_R/Forearm_R
+        weight: 1
+      - path: Armature/Root/Torso_M/Torso_T/Shoulder_R/Arm_R/Forearm_R/Wrist_R
+        weight: 1
+      - path: bras_L
+        weight: 1
+      - path: bras_R
+        weight: 1
+      - path: buste
+        weight: 1
+      - path: robe
+        weight: 1
+      - path: tete
+        weight: 1
+      - path: volant
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: victory
+      takeName: victory
+      firstFrame: 0
+      lastFrame: 12
       wrapMode: 2
       orientationOffsetY: 0
       level: 0

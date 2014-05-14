@@ -135,7 +135,6 @@ public class MainLevel : MonoBehaviour
 			GameObject playerObject = Instantiate (playerPrefab) as GameObject;
 
 			Princess player = playerObject.GetComponent<Princess>();
-			player.transform.position = new Vector3(0, 0, 50);
 
 			player.LevelManager = this;
 			player.SetIndex(i + 1);
@@ -239,7 +238,6 @@ public class MainLevel : MonoBehaviour
 			if (currentCountdown <= 0) {
 				if (items.Count == 0) {
 					EndGame ();
-					PlayVictorySound();
 				} else {
 					// launch next round 
 					StartRound ();
@@ -251,7 +249,7 @@ public class MainLevel : MonoBehaviour
 		case State.End:
 			if (currentCountdown <= 0) {
 				ShowMenu();
-				gui.ShowScores(false);
+				gui.ShowWinner(false);
 			}
 			break;
 		}
@@ -281,6 +279,10 @@ public class MainLevel : MonoBehaviour
 	
 	void ShowMenu()
 	{
+		foreach (Princess player in players) {
+			player.transform.position = new Vector3(0, 0, -100);
+		}
+
 		currentState = State.Menu;
 		menu.SetActive (true);
 		mainCamera.SetMenuMode();
@@ -295,7 +297,7 @@ public class MainLevel : MonoBehaviour
 		items.Clear ();
 		foreach (GameObject itemObject in GameObject.FindGameObjectsWithTag("Item")) {
 			Item item = itemObject.GetComponent<Item> ();
-			item.Reset();
+			item.ResetPosition();
 			items.Add (item);
 		}
 
@@ -308,6 +310,7 @@ public class MainLevel : MonoBehaviour
 
 			players[i].transform.position = startPoint.position;
 			players[i].score = 0;
+			players[i].ResetItems();
 
 			gui.SetScore (i, 0);
 		}
@@ -351,14 +354,15 @@ public class MainLevel : MonoBehaviour
 	{
 		currentState = State.End;
 		currentCountdown = endDuration;
-		
-		mainCamera.SetPlayerMode (players.OrderByDescending (player => player.score).First ().gameObject);
-	}
-	
-	void SetGrabbing ()
-	{
-		currentState = State.Grabbing;
-		currentCountdown = grabbingDuration;
+
+		Princess winner = players.OrderByDescending (player => player.score).First ();
+		winner.WinGame ();
+		mainCamera.SetWinnerMode (winner.gameObject);
+
+		gui.ShowScores (false);
+		gui.ShowWinner (true, winner);
+
+		PlayVictorySound();
 	}
 
 	public void GrabItem (Princess player, Item item)
@@ -394,8 +398,6 @@ public class MainLevel : MonoBehaviour
 				everyPlayer.SetFail ();
 
 		}
-
-		player.SetSuccess();
 
 		mainCamera.SetPlayerMode (player.gameObject);
 		gui.ShowScores (true);

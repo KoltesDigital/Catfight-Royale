@@ -6,18 +6,27 @@ public class MainGUI : MonoBehaviour
 	public Transform scores;
 	public GUIText[] scoreTexts;
 	public GUIText timeText;
+	public GUIText winnerText;
+
 	public float reactivity = 1f;
+
 	public float showedTimeY = 1f;
 	public float hiddenTimeY = 1.2f;
 	private float timeY;
+
 	public float showedScoresY = 0.1f;
 	public float hiddenScoresY = -0.2f;
 	private float scoresY;
+
+	public float showedWinnerY = 0.3f;
+	public float hiddenWinnerY = -0.2f;
+	private float winnerY;
 
 	void Start ()
 	{
 		timeY = hiddenTimeY;
 		scoresY = hiddenScoresY;
+		winnerY = hiddenWinnerY;
 	}
 
 	void Update ()
@@ -33,6 +42,10 @@ public class MainGUI : MonoBehaviour
 		position = timeText.transform.localPosition;
 		position.y += (timeY - position.y) * ratio;
 		timeText.transform.localPosition = position;
+		
+		position = winnerText.transform.localPosition;
+		position.y += (winnerY - position.y) * ratio;
+		winnerText.transform.localPosition = position;
 	}
 
 	public void ShowTime (bool show)
@@ -43,6 +56,13 @@ public class MainGUI : MonoBehaviour
 	public void ShowScores (bool show)
 	{
 		scoresY = show ? showedScoresY : hiddenScoresY;
+	}
+
+	public void ShowWinner (bool show, Princess winner = null)
+	{
+		winnerY = show ? showedWinnerY : hiddenWinnerY;
+		if (winner)
+			winnerText.text = "Player " + winner.index.ToString () + " wins!";
 	}
 
 	public void SetTimeLeft (float timeLeft)
