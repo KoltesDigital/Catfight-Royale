@@ -53,7 +53,7 @@ public class Princess : MonoBehaviour
 	public int numMeleeMashes = 0;
 	public float staminaLoss = 0.05f;
 	public float staminaRegen = 0.1f;
-	public float staminaMashResist = 0.1f;
+	public float staminaMashRegen = 0.15f;
 	private StaminaBar staminaBar;
 	[HideInInspector]
 	public Princess opponent;
@@ -326,6 +326,8 @@ public class Princess : MonoBehaviour
 						LevelManager.StartFight(this, opponent);
 					}
 				}
+			} else if ( state == PlayerState.Resting ) {
+				stamina += staminaMashRegen;
 			}
 			
 			if (state == PlayerState.Fighting) {
@@ -363,6 +365,10 @@ public class Princess : MonoBehaviour
 		Vector3 unhiddenPos = transform.position;
 		unhiddenPos.z = transform.position.y;
 		transform.position = unhiddenPos;
+
+		// only get free in case we are not playing grab animatio
+		if (LevelManager.GrabbingMode() == false )
+			SetFree();
 
 		// todo : play some sound/animation ?
 	}

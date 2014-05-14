@@ -45,7 +45,7 @@ public class MainLevel : MonoBehaviour
 				}
 
 				winner.stamina = Mathf.Min( winner.stamina, 0.5f );
-				winner.WinFight();
+				winner.WinFight(); 
 				level.cloud.EndFight();
 			}
 		}
@@ -547,6 +547,10 @@ public class MainLevel : MonoBehaviour
 
 	public bool FightingMode() { 
 		return ( currentState == State.BringBack );
+	}
+
+	public bool GrabbingMode() { 
+		return ( currentState == State.Grabbing );
 	}
 
 /*	public void LoseFight(Princess player)
