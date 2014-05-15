@@ -287,6 +287,8 @@ public class MainLevel : MonoBehaviour
 		menu.SetActive (true);
 		mainCamera.SetMenuMode();
 		
+		gui.ShowCredits (true);
+
 		audio.clip = searchMusic;
 		audio.loop = true;
 		audio.Play ();
@@ -294,6 +296,8 @@ public class MainLevel : MonoBehaviour
 	
 	void StartGame ()
 	{
+		gui.ShowCredits (false);
+
 		items.Clear ();
 		foreach (GameObject itemObject in GameObject.FindGameObjectsWithTag("Item")) {
 			Item item = itemObject.GetComponent<Item> ();
