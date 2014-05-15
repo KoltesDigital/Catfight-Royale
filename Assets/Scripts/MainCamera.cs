@@ -43,6 +43,7 @@ public class MainCamera : MonoBehaviour
 	public float reactivity = 2.5f;
 
 	private List<Transform> players;
+	private bool inMelee;
 
 	public void SetPlayers(List<Princess> playerObjects)
 	{
@@ -82,10 +83,16 @@ public class MainCamera : MonoBehaviour
 		mode = Mode.Gameplay;
 	}
 
+	public void SetInMelee(bool melee)
+	{
+		inMelee = melee;
+	}
+
 	void FixedUpdate ()
 	{
 		Vector3 targetPosition;
 		float targetSize;
+		float targetRotation = 0;
 
 		switch (mode) {
 		case Mode.Menu:
@@ -137,6 +144,12 @@ public class MainCamera : MonoBehaviour
 
 			targetSize = Mathf.Max (maxDiff, gameplaySizeMin);
 			targetPosition = new Vector3 (xCenter, yCenter, 0f) + gameplayCamOffset;
+
+			if (inMelee) {
+				targetRotation = Mathf.Sin (Time.time * 10f) * 10f;
+				targetSize += Mathf.Sin (Time.time * 6f) * 2f;
+			} else
+				targetRotation = Mathf.Sin (Time.time * 0.4f) * 1f;
 			break;
 		}
 
@@ -146,5 +159,18 @@ public class MainCamera : MonoBehaviour
 		Vector3 newPosition = Vector3.Lerp (camera.transform.position, targetPosition, blendRatio);
 		newPosition.z = cameraZ;
 		camera.transform.position = newPosition;
+
+		float newRotation = camera.transform.eulerAngles.z;
+		float angleDiff = targetRotation - newRotation;
+		if (angleDiff < -180)
+			angleDiff += 360;
+		if (angleDiff >= 180)
+			angleDiff -= 360;
+		newRotation += angleDiff * blendRatio;
+		if (newRotation < 0)
+			newRotation += 360;
+		if (newRotation >= 360)
+			newRotation -= 360;
+		camera.transform.eulerAngles = new Vector3(0, 0, newRotation);
 	}
 }

@@ -47,6 +47,7 @@ public class MainLevel : MonoBehaviour
 				winner.stamina = Mathf.Min( winner.stamina, 0.5f );
 				winner.WinFight(); 
 				level.cloud.EndFight();
+				level.mainCamera.SetInMelee(false);
 			}
 		}
 
@@ -505,6 +506,7 @@ public class MainLevel : MonoBehaviour
 			if (AddFighterToFight(fight, a, b) || AddFighterToFight(fight, b, a)) {
 				fight.RestartFight();
 				cloud.BeginFight(fight.fighters);
+				mainCamera.SetInMelee(true);
 				return;
 			}
 		}
