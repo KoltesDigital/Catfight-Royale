@@ -187,23 +187,8 @@ public class Princess : MonoBehaviour
 	void UpdateMotion ()
 	{
 		// Update motion velocity
-		float xSpeed = Input.GetAxis ("L_XAxis_" + index.ToString ()) * MoveHorizontalSpeed;
-		float ySpeed = Input.GetAxis ("L_YAxis_" + index.ToString ()) * MoveVerticalSpeed;
-
-		// for debug only
-		if ( index == 2 ) {
-			if ( Input.GetKey( KeyCode.LeftArrow ) )
-				xSpeed = -MoveHorizontalSpeed;
-
-			if ( Input.GetKey( KeyCode.RightArrow ) )
-				xSpeed = MoveHorizontalSpeed;
-
-			if ( Input.GetKey( KeyCode.UpArrow ) )
-				ySpeed = MoveVerticalSpeed;
-
-			if ( Input.GetKey( KeyCode.DownArrow ) )
-				ySpeed = -MoveVerticalSpeed;
-		}
+		float xSpeed = Input.GetAxis ("XAxis_" + index.ToString ()) * MoveHorizontalSpeed;
+		float ySpeed = Input.GetAxis ("YAxis_" + index.ToString ()) * MoveVerticalSpeed;
 
 		// add speed multipliers depending on situation
 		if ( LevelManager.FightingMode() == false ) {
@@ -409,16 +394,7 @@ public class Princess : MonoBehaviour
 		// TODO : SHOULD BE REMOVED...but there's a weird bug where the input is still active for a few frames ?
 		attackButtonCooldown -= Time.deltaTime;
 		if ( attackButtonCooldown <= 0.0f ) {
-			bool bAttackButton = false;
-
-			if (index == 1 && Input.GetKeyDown (KeyCode.Space))
-				bAttackButton = true;
-
-			if (index == 2 && Input.GetKeyDown (KeyCode.RightControl))
-				bAttackButton = true;
-
-			//return Input.GetButtonDown ("A_1");
-			bAttackButton |= Input.GetButtonDown ("A_" + index.ToString ());
+			bool bAttackButton = Input.GetButtonDown ("A_" + index.ToString ());
 
 			if ( bAttackButton ) {
 				attackButtonCooldown = 0.05f;

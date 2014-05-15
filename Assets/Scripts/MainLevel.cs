@@ -170,7 +170,10 @@ public class MainLevel : MonoBehaviour
 			}
 			fights.RemoveAll( fight => fight.IsOver() );
 		}
-		
+
+		if (Input.GetKeyDown (KeyCode.Escape))
+			EndGame ();
+
 		currentCountdown -= Time.deltaTime;
 		switch (currentState) {
 		case State.Menu:
@@ -250,7 +253,6 @@ public class MainLevel : MonoBehaviour
 		case State.End:
 			if (currentCountdown <= 0) {
 				ShowMenu();
-				gui.ShowWinner(false);
 			}
 			break;
 		}
@@ -288,6 +290,7 @@ public class MainLevel : MonoBehaviour
 		menu.SetActive (true);
 		mainCamera.SetMenuMode();
 		
+		gui.ShowWinner(false);
 		gui.ShowCredits (true);
 
 		audio.clip = searchMusic;
@@ -363,7 +366,8 @@ public class MainLevel : MonoBehaviour
 		Princess winner = players.OrderByDescending (player => player.score).First ();
 		winner.WinGame ();
 		mainCamera.SetWinnerMode (winner.gameObject);
-
+		
+		gui.ShowTime (false);
 		gui.ShowScores (false);
 		gui.ShowWinner (true, winner);
 
