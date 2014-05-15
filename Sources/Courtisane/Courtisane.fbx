@@ -10,10 +10,10 @@ FBXHeaderExtension:  {
 		Version: 1000
 		Year: 2014
 		Month: 05
-		Day: 14
-		Hour: 02
-		Minute: 54
-		Second: 03
+		Day: 15
+		Hour: 03
+		Minute: 28
+		Second: 18
 		Millisecond: 0
 	}
 	Creator: "FBX SDK/FBX Plugins build 20070228"
@@ -21,7 +21,7 @@ FBXHeaderExtension:  {
 		FlagPLE: 0
 	}
 }
-CreationTime: "2014-05-14 02:54:03:000"
+CreationTime: "2014-05-15 03:28:18:000"
 Creator: "Blender version 2.70 (sub 0)"
 
 ; Object definitions
@@ -6220,197 +6220,197 @@ Relations:  {
 	}
 	Deformer: "Deformer::Skin bras_R", "Skin" {
 	}
-	Deformer: "SubDeformer::Cluster bras_R Root", "Cluster" {
-	}
-	Deformer: "SubDeformer::Cluster robe Root", "Cluster" {
-	}
-	Deformer: "SubDeformer::Cluster buste Root", "Cluster" {
+	Deformer: "SubDeformer::Cluster bras_L Root", "Cluster" {
 	}
 	Deformer: "SubDeformer::Cluster tete Root", "Cluster" {
 	}
-	Deformer: "SubDeformer::Cluster bras_L Root", "Cluster" {
+	Deformer: "SubDeformer::Cluster robe Root", "Cluster" {
 	}
 	Deformer: "SubDeformer::Cluster volant Root", "Cluster" {
 	}
-	Deformer: "SubDeformer::Cluster bras_R Torso_M", "Cluster" {
+	Deformer: "SubDeformer::Cluster buste Root", "Cluster" {
 	}
-	Deformer: "SubDeformer::Cluster robe Torso_M", "Cluster" {
-	}
-	Deformer: "SubDeformer::Cluster buste Torso_M", "Cluster" {
-	}
-	Deformer: "SubDeformer::Cluster tete Torso_M", "Cluster" {
+	Deformer: "SubDeformer::Cluster bras_R Root", "Cluster" {
 	}
 	Deformer: "SubDeformer::Cluster bras_L Torso_M", "Cluster" {
 	}
+	Deformer: "SubDeformer::Cluster tete Torso_M", "Cluster" {
+	}
+	Deformer: "SubDeformer::Cluster robe Torso_M", "Cluster" {
+	}
 	Deformer: "SubDeformer::Cluster volant Torso_M", "Cluster" {
 	}
-	Deformer: "SubDeformer::Cluster bras_R Torso_T", "Cluster" {
+	Deformer: "SubDeformer::Cluster buste Torso_M", "Cluster" {
 	}
-	Deformer: "SubDeformer::Cluster robe Torso_T", "Cluster" {
-	}
-	Deformer: "SubDeformer::Cluster buste Torso_T", "Cluster" {
-	}
-	Deformer: "SubDeformer::Cluster tete Torso_T", "Cluster" {
+	Deformer: "SubDeformer::Cluster bras_R Torso_M", "Cluster" {
 	}
 	Deformer: "SubDeformer::Cluster bras_L Torso_T", "Cluster" {
 	}
+	Deformer: "SubDeformer::Cluster tete Torso_T", "Cluster" {
+	}
+	Deformer: "SubDeformer::Cluster robe Torso_T", "Cluster" {
+	}
 	Deformer: "SubDeformer::Cluster volant Torso_T", "Cluster" {
 	}
-	Deformer: "SubDeformer::Cluster bras_R Shoulder_R", "Cluster" {
+	Deformer: "SubDeformer::Cluster buste Torso_T", "Cluster" {
 	}
-	Deformer: "SubDeformer::Cluster robe Shoulder_R", "Cluster" {
-	}
-	Deformer: "SubDeformer::Cluster buste Shoulder_R", "Cluster" {
-	}
-	Deformer: "SubDeformer::Cluster tete Shoulder_R", "Cluster" {
+	Deformer: "SubDeformer::Cluster bras_R Torso_T", "Cluster" {
 	}
 	Deformer: "SubDeformer::Cluster bras_L Shoulder_R", "Cluster" {
 	}
+	Deformer: "SubDeformer::Cluster tete Shoulder_R", "Cluster" {
+	}
+	Deformer: "SubDeformer::Cluster robe Shoulder_R", "Cluster" {
+	}
 	Deformer: "SubDeformer::Cluster volant Shoulder_R", "Cluster" {
 	}
-	Deformer: "SubDeformer::Cluster bras_R Arm_R", "Cluster" {
+	Deformer: "SubDeformer::Cluster buste Shoulder_R", "Cluster" {
 	}
-	Deformer: "SubDeformer::Cluster robe Arm_R", "Cluster" {
-	}
-	Deformer: "SubDeformer::Cluster buste Arm_R", "Cluster" {
-	}
-	Deformer: "SubDeformer::Cluster tete Arm_R", "Cluster" {
+	Deformer: "SubDeformer::Cluster bras_R Shoulder_R", "Cluster" {
 	}
 	Deformer: "SubDeformer::Cluster bras_L Arm_R", "Cluster" {
 	}
+	Deformer: "SubDeformer::Cluster tete Arm_R", "Cluster" {
+	}
+	Deformer: "SubDeformer::Cluster robe Arm_R", "Cluster" {
+	}
 	Deformer: "SubDeformer::Cluster volant Arm_R", "Cluster" {
 	}
-	Deformer: "SubDeformer::Cluster bras_R Forearm_R", "Cluster" {
+	Deformer: "SubDeformer::Cluster buste Arm_R", "Cluster" {
 	}
-	Deformer: "SubDeformer::Cluster robe Forearm_R", "Cluster" {
-	}
-	Deformer: "SubDeformer::Cluster buste Forearm_R", "Cluster" {
-	}
-	Deformer: "SubDeformer::Cluster tete Forearm_R", "Cluster" {
+	Deformer: "SubDeformer::Cluster bras_R Arm_R", "Cluster" {
 	}
 	Deformer: "SubDeformer::Cluster bras_L Forearm_R", "Cluster" {
 	}
+	Deformer: "SubDeformer::Cluster tete Forearm_R", "Cluster" {
+	}
+	Deformer: "SubDeformer::Cluster robe Forearm_R", "Cluster" {
+	}
 	Deformer: "SubDeformer::Cluster volant Forearm_R", "Cluster" {
 	}
-	Deformer: "SubDeformer::Cluster bras_R Wrist_R", "Cluster" {
+	Deformer: "SubDeformer::Cluster buste Forearm_R", "Cluster" {
 	}
-	Deformer: "SubDeformer::Cluster robe Wrist_R", "Cluster" {
-	}
-	Deformer: "SubDeformer::Cluster buste Wrist_R", "Cluster" {
-	}
-	Deformer: "SubDeformer::Cluster tete Wrist_R", "Cluster" {
+	Deformer: "SubDeformer::Cluster bras_R Forearm_R", "Cluster" {
 	}
 	Deformer: "SubDeformer::Cluster bras_L Wrist_R", "Cluster" {
 	}
+	Deformer: "SubDeformer::Cluster tete Wrist_R", "Cluster" {
+	}
+	Deformer: "SubDeformer::Cluster robe Wrist_R", "Cluster" {
+	}
 	Deformer: "SubDeformer::Cluster volant Wrist_R", "Cluster" {
 	}
-	Deformer: "SubDeformer::Cluster bras_R Neck", "Cluster" {
+	Deformer: "SubDeformer::Cluster buste Wrist_R", "Cluster" {
 	}
-	Deformer: "SubDeformer::Cluster robe Neck", "Cluster" {
-	}
-	Deformer: "SubDeformer::Cluster buste Neck", "Cluster" {
-	}
-	Deformer: "SubDeformer::Cluster tete Neck", "Cluster" {
+	Deformer: "SubDeformer::Cluster bras_R Wrist_R", "Cluster" {
 	}
 	Deformer: "SubDeformer::Cluster bras_L Neck", "Cluster" {
 	}
+	Deformer: "SubDeformer::Cluster tete Neck", "Cluster" {
+	}
+	Deformer: "SubDeformer::Cluster robe Neck", "Cluster" {
+	}
 	Deformer: "SubDeformer::Cluster volant Neck", "Cluster" {
 	}
-	Deformer: "SubDeformer::Cluster bras_R Head", "Cluster" {
+	Deformer: "SubDeformer::Cluster buste Neck", "Cluster" {
 	}
-	Deformer: "SubDeformer::Cluster robe Head", "Cluster" {
-	}
-	Deformer: "SubDeformer::Cluster buste Head", "Cluster" {
-	}
-	Deformer: "SubDeformer::Cluster tete Head", "Cluster" {
+	Deformer: "SubDeformer::Cluster bras_R Neck", "Cluster" {
 	}
 	Deformer: "SubDeformer::Cluster bras_L Head", "Cluster" {
 	}
+	Deformer: "SubDeformer::Cluster tete Head", "Cluster" {
+	}
+	Deformer: "SubDeformer::Cluster robe Head", "Cluster" {
+	}
 	Deformer: "SubDeformer::Cluster volant Head", "Cluster" {
 	}
-	Deformer: "SubDeformer::Cluster bras_R Shoulder_L", "Cluster" {
+	Deformer: "SubDeformer::Cluster buste Head", "Cluster" {
 	}
-	Deformer: "SubDeformer::Cluster robe Shoulder_L", "Cluster" {
-	}
-	Deformer: "SubDeformer::Cluster buste Shoulder_L", "Cluster" {
-	}
-	Deformer: "SubDeformer::Cluster tete Shoulder_L", "Cluster" {
+	Deformer: "SubDeformer::Cluster bras_R Head", "Cluster" {
 	}
 	Deformer: "SubDeformer::Cluster bras_L Shoulder_L", "Cluster" {
 	}
+	Deformer: "SubDeformer::Cluster tete Shoulder_L", "Cluster" {
+	}
+	Deformer: "SubDeformer::Cluster robe Shoulder_L", "Cluster" {
+	}
 	Deformer: "SubDeformer::Cluster volant Shoulder_L", "Cluster" {
 	}
-	Deformer: "SubDeformer::Cluster bras_R Arm_L", "Cluster" {
+	Deformer: "SubDeformer::Cluster buste Shoulder_L", "Cluster" {
 	}
-	Deformer: "SubDeformer::Cluster robe Arm_L", "Cluster" {
-	}
-	Deformer: "SubDeformer::Cluster buste Arm_L", "Cluster" {
-	}
-	Deformer: "SubDeformer::Cluster tete Arm_L", "Cluster" {
+	Deformer: "SubDeformer::Cluster bras_R Shoulder_L", "Cluster" {
 	}
 	Deformer: "SubDeformer::Cluster bras_L Arm_L", "Cluster" {
 	}
+	Deformer: "SubDeformer::Cluster tete Arm_L", "Cluster" {
+	}
+	Deformer: "SubDeformer::Cluster robe Arm_L", "Cluster" {
+	}
 	Deformer: "SubDeformer::Cluster volant Arm_L", "Cluster" {
 	}
-	Deformer: "SubDeformer::Cluster bras_R Forearm_L", "Cluster" {
+	Deformer: "SubDeformer::Cluster buste Arm_L", "Cluster" {
 	}
-	Deformer: "SubDeformer::Cluster robe Forearm_L", "Cluster" {
-	}
-	Deformer: "SubDeformer::Cluster buste Forearm_L", "Cluster" {
-	}
-	Deformer: "SubDeformer::Cluster tete Forearm_L", "Cluster" {
+	Deformer: "SubDeformer::Cluster bras_R Arm_L", "Cluster" {
 	}
 	Deformer: "SubDeformer::Cluster bras_L Forearm_L", "Cluster" {
 	}
+	Deformer: "SubDeformer::Cluster tete Forearm_L", "Cluster" {
+	}
+	Deformer: "SubDeformer::Cluster robe Forearm_L", "Cluster" {
+	}
 	Deformer: "SubDeformer::Cluster volant Forearm_L", "Cluster" {
 	}
-	Deformer: "SubDeformer::Cluster bras_R Wrist_L", "Cluster" {
+	Deformer: "SubDeformer::Cluster buste Forearm_L", "Cluster" {
 	}
-	Deformer: "SubDeformer::Cluster robe Wrist_L", "Cluster" {
-	}
-	Deformer: "SubDeformer::Cluster buste Wrist_L", "Cluster" {
-	}
-	Deformer: "SubDeformer::Cluster tete Wrist_L", "Cluster" {
+	Deformer: "SubDeformer::Cluster bras_R Forearm_L", "Cluster" {
 	}
 	Deformer: "SubDeformer::Cluster bras_L Wrist_L", "Cluster" {
 	}
+	Deformer: "SubDeformer::Cluster tete Wrist_L", "Cluster" {
+	}
+	Deformer: "SubDeformer::Cluster robe Wrist_L", "Cluster" {
+	}
 	Deformer: "SubDeformer::Cluster volant Wrist_L", "Cluster" {
 	}
-	Deformer: "SubDeformer::Cluster bras_R Grab", "Cluster" {
+	Deformer: "SubDeformer::Cluster buste Wrist_L", "Cluster" {
 	}
-	Deformer: "SubDeformer::Cluster robe Grab", "Cluster" {
-	}
-	Deformer: "SubDeformer::Cluster buste Grab", "Cluster" {
-	}
-	Deformer: "SubDeformer::Cluster tete Grab", "Cluster" {
+	Deformer: "SubDeformer::Cluster bras_R Wrist_L", "Cluster" {
 	}
 	Deformer: "SubDeformer::Cluster bras_L Grab", "Cluster" {
 	}
+	Deformer: "SubDeformer::Cluster tete Grab", "Cluster" {
+	}
+	Deformer: "SubDeformer::Cluster robe Grab", "Cluster" {
+	}
 	Deformer: "SubDeformer::Cluster volant Grab", "Cluster" {
 	}
-	Deformer: "SubDeformer::Cluster bras_R Dress_T", "Cluster" {
+	Deformer: "SubDeformer::Cluster buste Grab", "Cluster" {
 	}
-	Deformer: "SubDeformer::Cluster robe Dress_T", "Cluster" {
-	}
-	Deformer: "SubDeformer::Cluster buste Dress_T", "Cluster" {
-	}
-	Deformer: "SubDeformer::Cluster tete Dress_T", "Cluster" {
+	Deformer: "SubDeformer::Cluster bras_R Grab", "Cluster" {
 	}
 	Deformer: "SubDeformer::Cluster bras_L Dress_T", "Cluster" {
 	}
+	Deformer: "SubDeformer::Cluster tete Dress_T", "Cluster" {
+	}
+	Deformer: "SubDeformer::Cluster robe Dress_T", "Cluster" {
+	}
 	Deformer: "SubDeformer::Cluster volant Dress_T", "Cluster" {
 	}
-	Deformer: "SubDeformer::Cluster bras_R Dress_B", "Cluster" {
+	Deformer: "SubDeformer::Cluster buste Dress_T", "Cluster" {
 	}
-	Deformer: "SubDeformer::Cluster robe Dress_B", "Cluster" {
-	}
-	Deformer: "SubDeformer::Cluster buste Dress_B", "Cluster" {
-	}
-	Deformer: "SubDeformer::Cluster tete Dress_B", "Cluster" {
+	Deformer: "SubDeformer::Cluster bras_R Dress_T", "Cluster" {
 	}
 	Deformer: "SubDeformer::Cluster bras_L Dress_B", "Cluster" {
 	}
+	Deformer: "SubDeformer::Cluster tete Dress_B", "Cluster" {
+	}
+	Deformer: "SubDeformer::Cluster robe Dress_B", "Cluster" {
+	}
 	Deformer: "SubDeformer::Cluster volant Dress_B", "Cluster" {
+	}
+	Deformer: "SubDeformer::Cluster buste Dress_B", "Cluster" {
+	}
+	Deformer: "SubDeformer::Cluster bras_R Dress_B", "Cluster" {
 	}
 }
 
@@ -6448,198 +6448,198 @@ Connections:  {
 	Connect: "OO", "Deformer::Skin robe", "Model::robe"
 	Connect: "OO", "Deformer::Skin buste", "Model::buste"
 	Connect: "OO", "Deformer::Skin bras_R", "Model::bras_R"
-	Connect: "OO", "SubDeformer::Cluster bras_R Root", "Deformer::Skin bras_R"
-	Connect: "OO", "SubDeformer::Cluster robe Root", "Deformer::Skin robe"
-	Connect: "OO", "SubDeformer::Cluster buste Root", "Deformer::Skin buste"
-	Connect: "OO", "SubDeformer::Cluster tete Root", "Deformer::Skin tete"
 	Connect: "OO", "SubDeformer::Cluster bras_L Root", "Deformer::Skin bras_L"
+	Connect: "OO", "SubDeformer::Cluster tete Root", "Deformer::Skin tete"
+	Connect: "OO", "SubDeformer::Cluster robe Root", "Deformer::Skin robe"
 	Connect: "OO", "SubDeformer::Cluster volant Root", "Deformer::Skin volant"
-	Connect: "OO", "SubDeformer::Cluster bras_R Torso_M", "Deformer::Skin bras_R"
-	Connect: "OO", "SubDeformer::Cluster robe Torso_M", "Deformer::Skin robe"
-	Connect: "OO", "SubDeformer::Cluster buste Torso_M", "Deformer::Skin buste"
-	Connect: "OO", "SubDeformer::Cluster tete Torso_M", "Deformer::Skin tete"
+	Connect: "OO", "SubDeformer::Cluster buste Root", "Deformer::Skin buste"
+	Connect: "OO", "SubDeformer::Cluster bras_R Root", "Deformer::Skin bras_R"
 	Connect: "OO", "SubDeformer::Cluster bras_L Torso_M", "Deformer::Skin bras_L"
+	Connect: "OO", "SubDeformer::Cluster tete Torso_M", "Deformer::Skin tete"
+	Connect: "OO", "SubDeformer::Cluster robe Torso_M", "Deformer::Skin robe"
 	Connect: "OO", "SubDeformer::Cluster volant Torso_M", "Deformer::Skin volant"
-	Connect: "OO", "SubDeformer::Cluster bras_R Torso_T", "Deformer::Skin bras_R"
-	Connect: "OO", "SubDeformer::Cluster robe Torso_T", "Deformer::Skin robe"
-	Connect: "OO", "SubDeformer::Cluster buste Torso_T", "Deformer::Skin buste"
-	Connect: "OO", "SubDeformer::Cluster tete Torso_T", "Deformer::Skin tete"
+	Connect: "OO", "SubDeformer::Cluster buste Torso_M", "Deformer::Skin buste"
+	Connect: "OO", "SubDeformer::Cluster bras_R Torso_M", "Deformer::Skin bras_R"
 	Connect: "OO", "SubDeformer::Cluster bras_L Torso_T", "Deformer::Skin bras_L"
+	Connect: "OO", "SubDeformer::Cluster tete Torso_T", "Deformer::Skin tete"
+	Connect: "OO", "SubDeformer::Cluster robe Torso_T", "Deformer::Skin robe"
 	Connect: "OO", "SubDeformer::Cluster volant Torso_T", "Deformer::Skin volant"
-	Connect: "OO", "SubDeformer::Cluster bras_R Shoulder_R", "Deformer::Skin bras_R"
-	Connect: "OO", "SubDeformer::Cluster robe Shoulder_R", "Deformer::Skin robe"
-	Connect: "OO", "SubDeformer::Cluster buste Shoulder_R", "Deformer::Skin buste"
-	Connect: "OO", "SubDeformer::Cluster tete Shoulder_R", "Deformer::Skin tete"
+	Connect: "OO", "SubDeformer::Cluster buste Torso_T", "Deformer::Skin buste"
+	Connect: "OO", "SubDeformer::Cluster bras_R Torso_T", "Deformer::Skin bras_R"
 	Connect: "OO", "SubDeformer::Cluster bras_L Shoulder_R", "Deformer::Skin bras_L"
+	Connect: "OO", "SubDeformer::Cluster tete Shoulder_R", "Deformer::Skin tete"
+	Connect: "OO", "SubDeformer::Cluster robe Shoulder_R", "Deformer::Skin robe"
 	Connect: "OO", "SubDeformer::Cluster volant Shoulder_R", "Deformer::Skin volant"
-	Connect: "OO", "SubDeformer::Cluster bras_R Arm_R", "Deformer::Skin bras_R"
-	Connect: "OO", "SubDeformer::Cluster robe Arm_R", "Deformer::Skin robe"
-	Connect: "OO", "SubDeformer::Cluster buste Arm_R", "Deformer::Skin buste"
-	Connect: "OO", "SubDeformer::Cluster tete Arm_R", "Deformer::Skin tete"
+	Connect: "OO", "SubDeformer::Cluster buste Shoulder_R", "Deformer::Skin buste"
+	Connect: "OO", "SubDeformer::Cluster bras_R Shoulder_R", "Deformer::Skin bras_R"
 	Connect: "OO", "SubDeformer::Cluster bras_L Arm_R", "Deformer::Skin bras_L"
+	Connect: "OO", "SubDeformer::Cluster tete Arm_R", "Deformer::Skin tete"
+	Connect: "OO", "SubDeformer::Cluster robe Arm_R", "Deformer::Skin robe"
 	Connect: "OO", "SubDeformer::Cluster volant Arm_R", "Deformer::Skin volant"
-	Connect: "OO", "SubDeformer::Cluster bras_R Forearm_R", "Deformer::Skin bras_R"
-	Connect: "OO", "SubDeformer::Cluster robe Forearm_R", "Deformer::Skin robe"
-	Connect: "OO", "SubDeformer::Cluster buste Forearm_R", "Deformer::Skin buste"
-	Connect: "OO", "SubDeformer::Cluster tete Forearm_R", "Deformer::Skin tete"
+	Connect: "OO", "SubDeformer::Cluster buste Arm_R", "Deformer::Skin buste"
+	Connect: "OO", "SubDeformer::Cluster bras_R Arm_R", "Deformer::Skin bras_R"
 	Connect: "OO", "SubDeformer::Cluster bras_L Forearm_R", "Deformer::Skin bras_L"
+	Connect: "OO", "SubDeformer::Cluster tete Forearm_R", "Deformer::Skin tete"
+	Connect: "OO", "SubDeformer::Cluster robe Forearm_R", "Deformer::Skin robe"
 	Connect: "OO", "SubDeformer::Cluster volant Forearm_R", "Deformer::Skin volant"
-	Connect: "OO", "SubDeformer::Cluster bras_R Wrist_R", "Deformer::Skin bras_R"
-	Connect: "OO", "SubDeformer::Cluster robe Wrist_R", "Deformer::Skin robe"
-	Connect: "OO", "SubDeformer::Cluster buste Wrist_R", "Deformer::Skin buste"
-	Connect: "OO", "SubDeformer::Cluster tete Wrist_R", "Deformer::Skin tete"
+	Connect: "OO", "SubDeformer::Cluster buste Forearm_R", "Deformer::Skin buste"
+	Connect: "OO", "SubDeformer::Cluster bras_R Forearm_R", "Deformer::Skin bras_R"
 	Connect: "OO", "SubDeformer::Cluster bras_L Wrist_R", "Deformer::Skin bras_L"
+	Connect: "OO", "SubDeformer::Cluster tete Wrist_R", "Deformer::Skin tete"
+	Connect: "OO", "SubDeformer::Cluster robe Wrist_R", "Deformer::Skin robe"
 	Connect: "OO", "SubDeformer::Cluster volant Wrist_R", "Deformer::Skin volant"
-	Connect: "OO", "SubDeformer::Cluster bras_R Neck", "Deformer::Skin bras_R"
-	Connect: "OO", "SubDeformer::Cluster robe Neck", "Deformer::Skin robe"
-	Connect: "OO", "SubDeformer::Cluster buste Neck", "Deformer::Skin buste"
-	Connect: "OO", "SubDeformer::Cluster tete Neck", "Deformer::Skin tete"
+	Connect: "OO", "SubDeformer::Cluster buste Wrist_R", "Deformer::Skin buste"
+	Connect: "OO", "SubDeformer::Cluster bras_R Wrist_R", "Deformer::Skin bras_R"
 	Connect: "OO", "SubDeformer::Cluster bras_L Neck", "Deformer::Skin bras_L"
+	Connect: "OO", "SubDeformer::Cluster tete Neck", "Deformer::Skin tete"
+	Connect: "OO", "SubDeformer::Cluster robe Neck", "Deformer::Skin robe"
 	Connect: "OO", "SubDeformer::Cluster volant Neck", "Deformer::Skin volant"
-	Connect: "OO", "SubDeformer::Cluster bras_R Head", "Deformer::Skin bras_R"
-	Connect: "OO", "SubDeformer::Cluster robe Head", "Deformer::Skin robe"
-	Connect: "OO", "SubDeformer::Cluster buste Head", "Deformer::Skin buste"
-	Connect: "OO", "SubDeformer::Cluster tete Head", "Deformer::Skin tete"
+	Connect: "OO", "SubDeformer::Cluster buste Neck", "Deformer::Skin buste"
+	Connect: "OO", "SubDeformer::Cluster bras_R Neck", "Deformer::Skin bras_R"
 	Connect: "OO", "SubDeformer::Cluster bras_L Head", "Deformer::Skin bras_L"
+	Connect: "OO", "SubDeformer::Cluster tete Head", "Deformer::Skin tete"
+	Connect: "OO", "SubDeformer::Cluster robe Head", "Deformer::Skin robe"
 	Connect: "OO", "SubDeformer::Cluster volant Head", "Deformer::Skin volant"
-	Connect: "OO", "SubDeformer::Cluster bras_R Shoulder_L", "Deformer::Skin bras_R"
-	Connect: "OO", "SubDeformer::Cluster robe Shoulder_L", "Deformer::Skin robe"
-	Connect: "OO", "SubDeformer::Cluster buste Shoulder_L", "Deformer::Skin buste"
-	Connect: "OO", "SubDeformer::Cluster tete Shoulder_L", "Deformer::Skin tete"
+	Connect: "OO", "SubDeformer::Cluster buste Head", "Deformer::Skin buste"
+	Connect: "OO", "SubDeformer::Cluster bras_R Head", "Deformer::Skin bras_R"
 	Connect: "OO", "SubDeformer::Cluster bras_L Shoulder_L", "Deformer::Skin bras_L"
+	Connect: "OO", "SubDeformer::Cluster tete Shoulder_L", "Deformer::Skin tete"
+	Connect: "OO", "SubDeformer::Cluster robe Shoulder_L", "Deformer::Skin robe"
 	Connect: "OO", "SubDeformer::Cluster volant Shoulder_L", "Deformer::Skin volant"
-	Connect: "OO", "SubDeformer::Cluster bras_R Arm_L", "Deformer::Skin bras_R"
-	Connect: "OO", "SubDeformer::Cluster robe Arm_L", "Deformer::Skin robe"
-	Connect: "OO", "SubDeformer::Cluster buste Arm_L", "Deformer::Skin buste"
-	Connect: "OO", "SubDeformer::Cluster tete Arm_L", "Deformer::Skin tete"
+	Connect: "OO", "SubDeformer::Cluster buste Shoulder_L", "Deformer::Skin buste"
+	Connect: "OO", "SubDeformer::Cluster bras_R Shoulder_L", "Deformer::Skin bras_R"
 	Connect: "OO", "SubDeformer::Cluster bras_L Arm_L", "Deformer::Skin bras_L"
+	Connect: "OO", "SubDeformer::Cluster tete Arm_L", "Deformer::Skin tete"
+	Connect: "OO", "SubDeformer::Cluster robe Arm_L", "Deformer::Skin robe"
 	Connect: "OO", "SubDeformer::Cluster volant Arm_L", "Deformer::Skin volant"
-	Connect: "OO", "SubDeformer::Cluster bras_R Forearm_L", "Deformer::Skin bras_R"
-	Connect: "OO", "SubDeformer::Cluster robe Forearm_L", "Deformer::Skin robe"
-	Connect: "OO", "SubDeformer::Cluster buste Forearm_L", "Deformer::Skin buste"
-	Connect: "OO", "SubDeformer::Cluster tete Forearm_L", "Deformer::Skin tete"
+	Connect: "OO", "SubDeformer::Cluster buste Arm_L", "Deformer::Skin buste"
+	Connect: "OO", "SubDeformer::Cluster bras_R Arm_L", "Deformer::Skin bras_R"
 	Connect: "OO", "SubDeformer::Cluster bras_L Forearm_L", "Deformer::Skin bras_L"
+	Connect: "OO", "SubDeformer::Cluster tete Forearm_L", "Deformer::Skin tete"
+	Connect: "OO", "SubDeformer::Cluster robe Forearm_L", "Deformer::Skin robe"
 	Connect: "OO", "SubDeformer::Cluster volant Forearm_L", "Deformer::Skin volant"
-	Connect: "OO", "SubDeformer::Cluster bras_R Wrist_L", "Deformer::Skin bras_R"
-	Connect: "OO", "SubDeformer::Cluster robe Wrist_L", "Deformer::Skin robe"
-	Connect: "OO", "SubDeformer::Cluster buste Wrist_L", "Deformer::Skin buste"
-	Connect: "OO", "SubDeformer::Cluster tete Wrist_L", "Deformer::Skin tete"
+	Connect: "OO", "SubDeformer::Cluster buste Forearm_L", "Deformer::Skin buste"
+	Connect: "OO", "SubDeformer::Cluster bras_R Forearm_L", "Deformer::Skin bras_R"
 	Connect: "OO", "SubDeformer::Cluster bras_L Wrist_L", "Deformer::Skin bras_L"
+	Connect: "OO", "SubDeformer::Cluster tete Wrist_L", "Deformer::Skin tete"
+	Connect: "OO", "SubDeformer::Cluster robe Wrist_L", "Deformer::Skin robe"
 	Connect: "OO", "SubDeformer::Cluster volant Wrist_L", "Deformer::Skin volant"
-	Connect: "OO", "SubDeformer::Cluster bras_R Grab", "Deformer::Skin bras_R"
-	Connect: "OO", "SubDeformer::Cluster robe Grab", "Deformer::Skin robe"
-	Connect: "OO", "SubDeformer::Cluster buste Grab", "Deformer::Skin buste"
-	Connect: "OO", "SubDeformer::Cluster tete Grab", "Deformer::Skin tete"
+	Connect: "OO", "SubDeformer::Cluster buste Wrist_L", "Deformer::Skin buste"
+	Connect: "OO", "SubDeformer::Cluster bras_R Wrist_L", "Deformer::Skin bras_R"
 	Connect: "OO", "SubDeformer::Cluster bras_L Grab", "Deformer::Skin bras_L"
+	Connect: "OO", "SubDeformer::Cluster tete Grab", "Deformer::Skin tete"
+	Connect: "OO", "SubDeformer::Cluster robe Grab", "Deformer::Skin robe"
 	Connect: "OO", "SubDeformer::Cluster volant Grab", "Deformer::Skin volant"
-	Connect: "OO", "SubDeformer::Cluster bras_R Dress_T", "Deformer::Skin bras_R"
-	Connect: "OO", "SubDeformer::Cluster robe Dress_T", "Deformer::Skin robe"
-	Connect: "OO", "SubDeformer::Cluster buste Dress_T", "Deformer::Skin buste"
-	Connect: "OO", "SubDeformer::Cluster tete Dress_T", "Deformer::Skin tete"
+	Connect: "OO", "SubDeformer::Cluster buste Grab", "Deformer::Skin buste"
+	Connect: "OO", "SubDeformer::Cluster bras_R Grab", "Deformer::Skin bras_R"
 	Connect: "OO", "SubDeformer::Cluster bras_L Dress_T", "Deformer::Skin bras_L"
+	Connect: "OO", "SubDeformer::Cluster tete Dress_T", "Deformer::Skin tete"
+	Connect: "OO", "SubDeformer::Cluster robe Dress_T", "Deformer::Skin robe"
 	Connect: "OO", "SubDeformer::Cluster volant Dress_T", "Deformer::Skin volant"
-	Connect: "OO", "SubDeformer::Cluster bras_R Dress_B", "Deformer::Skin bras_R"
-	Connect: "OO", "SubDeformer::Cluster robe Dress_B", "Deformer::Skin robe"
-	Connect: "OO", "SubDeformer::Cluster buste Dress_B", "Deformer::Skin buste"
-	Connect: "OO", "SubDeformer::Cluster tete Dress_B", "Deformer::Skin tete"
+	Connect: "OO", "SubDeformer::Cluster buste Dress_T", "Deformer::Skin buste"
+	Connect: "OO", "SubDeformer::Cluster bras_R Dress_T", "Deformer::Skin bras_R"
 	Connect: "OO", "SubDeformer::Cluster bras_L Dress_B", "Deformer::Skin bras_L"
+	Connect: "OO", "SubDeformer::Cluster tete Dress_B", "Deformer::Skin tete"
+	Connect: "OO", "SubDeformer::Cluster robe Dress_B", "Deformer::Skin robe"
 	Connect: "OO", "SubDeformer::Cluster volant Dress_B", "Deformer::Skin volant"
-	Connect: "OO", "Model::Root", "SubDeformer::Cluster bras_R Root"
-	Connect: "OO", "Model::Root", "SubDeformer::Cluster robe Root"
-	Connect: "OO", "Model::Root", "SubDeformer::Cluster buste Root"
-	Connect: "OO", "Model::Root", "SubDeformer::Cluster tete Root"
+	Connect: "OO", "SubDeformer::Cluster buste Dress_B", "Deformer::Skin buste"
+	Connect: "OO", "SubDeformer::Cluster bras_R Dress_B", "Deformer::Skin bras_R"
 	Connect: "OO", "Model::Root", "SubDeformer::Cluster bras_L Root"
+	Connect: "OO", "Model::Root", "SubDeformer::Cluster tete Root"
+	Connect: "OO", "Model::Root", "SubDeformer::Cluster robe Root"
 	Connect: "OO", "Model::Root", "SubDeformer::Cluster volant Root"
-	Connect: "OO", "Model::Torso_M", "SubDeformer::Cluster bras_R Torso_M"
-	Connect: "OO", "Model::Torso_M", "SubDeformer::Cluster robe Torso_M"
-	Connect: "OO", "Model::Torso_M", "SubDeformer::Cluster buste Torso_M"
-	Connect: "OO", "Model::Torso_M", "SubDeformer::Cluster tete Torso_M"
+	Connect: "OO", "Model::Root", "SubDeformer::Cluster buste Root"
+	Connect: "OO", "Model::Root", "SubDeformer::Cluster bras_R Root"
 	Connect: "OO", "Model::Torso_M", "SubDeformer::Cluster bras_L Torso_M"
+	Connect: "OO", "Model::Torso_M", "SubDeformer::Cluster tete Torso_M"
+	Connect: "OO", "Model::Torso_M", "SubDeformer::Cluster robe Torso_M"
 	Connect: "OO", "Model::Torso_M", "SubDeformer::Cluster volant Torso_M"
-	Connect: "OO", "Model::Torso_T", "SubDeformer::Cluster bras_R Torso_T"
-	Connect: "OO", "Model::Torso_T", "SubDeformer::Cluster robe Torso_T"
-	Connect: "OO", "Model::Torso_T", "SubDeformer::Cluster buste Torso_T"
-	Connect: "OO", "Model::Torso_T", "SubDeformer::Cluster tete Torso_T"
+	Connect: "OO", "Model::Torso_M", "SubDeformer::Cluster buste Torso_M"
+	Connect: "OO", "Model::Torso_M", "SubDeformer::Cluster bras_R Torso_M"
 	Connect: "OO", "Model::Torso_T", "SubDeformer::Cluster bras_L Torso_T"
+	Connect: "OO", "Model::Torso_T", "SubDeformer::Cluster tete Torso_T"
+	Connect: "OO", "Model::Torso_T", "SubDeformer::Cluster robe Torso_T"
 	Connect: "OO", "Model::Torso_T", "SubDeformer::Cluster volant Torso_T"
-	Connect: "OO", "Model::Shoulder_R", "SubDeformer::Cluster bras_R Shoulder_R"
-	Connect: "OO", "Model::Shoulder_R", "SubDeformer::Cluster robe Shoulder_R"
-	Connect: "OO", "Model::Shoulder_R", "SubDeformer::Cluster buste Shoulder_R"
-	Connect: "OO", "Model::Shoulder_R", "SubDeformer::Cluster tete Shoulder_R"
+	Connect: "OO", "Model::Torso_T", "SubDeformer::Cluster buste Torso_T"
+	Connect: "OO", "Model::Torso_T", "SubDeformer::Cluster bras_R Torso_T"
 	Connect: "OO", "Model::Shoulder_R", "SubDeformer::Cluster bras_L Shoulder_R"
+	Connect: "OO", "Model::Shoulder_R", "SubDeformer::Cluster tete Shoulder_R"
+	Connect: "OO", "Model::Shoulder_R", "SubDeformer::Cluster robe Shoulder_R"
 	Connect: "OO", "Model::Shoulder_R", "SubDeformer::Cluster volant Shoulder_R"
-	Connect: "OO", "Model::Arm_R", "SubDeformer::Cluster bras_R Arm_R"
-	Connect: "OO", "Model::Arm_R", "SubDeformer::Cluster robe Arm_R"
-	Connect: "OO", "Model::Arm_R", "SubDeformer::Cluster buste Arm_R"
-	Connect: "OO", "Model::Arm_R", "SubDeformer::Cluster tete Arm_R"
+	Connect: "OO", "Model::Shoulder_R", "SubDeformer::Cluster buste Shoulder_R"
+	Connect: "OO", "Model::Shoulder_R", "SubDeformer::Cluster bras_R Shoulder_R"
 	Connect: "OO", "Model::Arm_R", "SubDeformer::Cluster bras_L Arm_R"
+	Connect: "OO", "Model::Arm_R", "SubDeformer::Cluster tete Arm_R"
+	Connect: "OO", "Model::Arm_R", "SubDeformer::Cluster robe Arm_R"
 	Connect: "OO", "Model::Arm_R", "SubDeformer::Cluster volant Arm_R"
-	Connect: "OO", "Model::Forearm_R", "SubDeformer::Cluster bras_R Forearm_R"
-	Connect: "OO", "Model::Forearm_R", "SubDeformer::Cluster robe Forearm_R"
-	Connect: "OO", "Model::Forearm_R", "SubDeformer::Cluster buste Forearm_R"
-	Connect: "OO", "Model::Forearm_R", "SubDeformer::Cluster tete Forearm_R"
+	Connect: "OO", "Model::Arm_R", "SubDeformer::Cluster buste Arm_R"
+	Connect: "OO", "Model::Arm_R", "SubDeformer::Cluster bras_R Arm_R"
 	Connect: "OO", "Model::Forearm_R", "SubDeformer::Cluster bras_L Forearm_R"
+	Connect: "OO", "Model::Forearm_R", "SubDeformer::Cluster tete Forearm_R"
+	Connect: "OO", "Model::Forearm_R", "SubDeformer::Cluster robe Forearm_R"
 	Connect: "OO", "Model::Forearm_R", "SubDeformer::Cluster volant Forearm_R"
-	Connect: "OO", "Model::Wrist_R", "SubDeformer::Cluster bras_R Wrist_R"
-	Connect: "OO", "Model::Wrist_R", "SubDeformer::Cluster robe Wrist_R"
-	Connect: "OO", "Model::Wrist_R", "SubDeformer::Cluster buste Wrist_R"
-	Connect: "OO", "Model::Wrist_R", "SubDeformer::Cluster tete Wrist_R"
+	Connect: "OO", "Model::Forearm_R", "SubDeformer::Cluster buste Forearm_R"
+	Connect: "OO", "Model::Forearm_R", "SubDeformer::Cluster bras_R Forearm_R"
 	Connect: "OO", "Model::Wrist_R", "SubDeformer::Cluster bras_L Wrist_R"
+	Connect: "OO", "Model::Wrist_R", "SubDeformer::Cluster tete Wrist_R"
+	Connect: "OO", "Model::Wrist_R", "SubDeformer::Cluster robe Wrist_R"
 	Connect: "OO", "Model::Wrist_R", "SubDeformer::Cluster volant Wrist_R"
-	Connect: "OO", "Model::Neck", "SubDeformer::Cluster bras_R Neck"
-	Connect: "OO", "Model::Neck", "SubDeformer::Cluster robe Neck"
-	Connect: "OO", "Model::Neck", "SubDeformer::Cluster buste Neck"
-	Connect: "OO", "Model::Neck", "SubDeformer::Cluster tete Neck"
+	Connect: "OO", "Model::Wrist_R", "SubDeformer::Cluster buste Wrist_R"
+	Connect: "OO", "Model::Wrist_R", "SubDeformer::Cluster bras_R Wrist_R"
 	Connect: "OO", "Model::Neck", "SubDeformer::Cluster bras_L Neck"
+	Connect: "OO", "Model::Neck", "SubDeformer::Cluster tete Neck"
+	Connect: "OO", "Model::Neck", "SubDeformer::Cluster robe Neck"
 	Connect: "OO", "Model::Neck", "SubDeformer::Cluster volant Neck"
-	Connect: "OO", "Model::Head", "SubDeformer::Cluster bras_R Head"
-	Connect: "OO", "Model::Head", "SubDeformer::Cluster robe Head"
-	Connect: "OO", "Model::Head", "SubDeformer::Cluster buste Head"
-	Connect: "OO", "Model::Head", "SubDeformer::Cluster tete Head"
+	Connect: "OO", "Model::Neck", "SubDeformer::Cluster buste Neck"
+	Connect: "OO", "Model::Neck", "SubDeformer::Cluster bras_R Neck"
 	Connect: "OO", "Model::Head", "SubDeformer::Cluster bras_L Head"
+	Connect: "OO", "Model::Head", "SubDeformer::Cluster tete Head"
+	Connect: "OO", "Model::Head", "SubDeformer::Cluster robe Head"
 	Connect: "OO", "Model::Head", "SubDeformer::Cluster volant Head"
-	Connect: "OO", "Model::Shoulder_L", "SubDeformer::Cluster bras_R Shoulder_L"
-	Connect: "OO", "Model::Shoulder_L", "SubDeformer::Cluster robe Shoulder_L"
-	Connect: "OO", "Model::Shoulder_L", "SubDeformer::Cluster buste Shoulder_L"
-	Connect: "OO", "Model::Shoulder_L", "SubDeformer::Cluster tete Shoulder_L"
+	Connect: "OO", "Model::Head", "SubDeformer::Cluster buste Head"
+	Connect: "OO", "Model::Head", "SubDeformer::Cluster bras_R Head"
 	Connect: "OO", "Model::Shoulder_L", "SubDeformer::Cluster bras_L Shoulder_L"
+	Connect: "OO", "Model::Shoulder_L", "SubDeformer::Cluster tete Shoulder_L"
+	Connect: "OO", "Model::Shoulder_L", "SubDeformer::Cluster robe Shoulder_L"
 	Connect: "OO", "Model::Shoulder_L", "SubDeformer::Cluster volant Shoulder_L"
-	Connect: "OO", "Model::Arm_L", "SubDeformer::Cluster bras_R Arm_L"
-	Connect: "OO", "Model::Arm_L", "SubDeformer::Cluster robe Arm_L"
-	Connect: "OO", "Model::Arm_L", "SubDeformer::Cluster buste Arm_L"
-	Connect: "OO", "Model::Arm_L", "SubDeformer::Cluster tete Arm_L"
+	Connect: "OO", "Model::Shoulder_L", "SubDeformer::Cluster buste Shoulder_L"
+	Connect: "OO", "Model::Shoulder_L", "SubDeformer::Cluster bras_R Shoulder_L"
 	Connect: "OO", "Model::Arm_L", "SubDeformer::Cluster bras_L Arm_L"
+	Connect: "OO", "Model::Arm_L", "SubDeformer::Cluster tete Arm_L"
+	Connect: "OO", "Model::Arm_L", "SubDeformer::Cluster robe Arm_L"
 	Connect: "OO", "Model::Arm_L", "SubDeformer::Cluster volant Arm_L"
-	Connect: "OO", "Model::Forearm_L", "SubDeformer::Cluster bras_R Forearm_L"
-	Connect: "OO", "Model::Forearm_L", "SubDeformer::Cluster robe Forearm_L"
-	Connect: "OO", "Model::Forearm_L", "SubDeformer::Cluster buste Forearm_L"
-	Connect: "OO", "Model::Forearm_L", "SubDeformer::Cluster tete Forearm_L"
+	Connect: "OO", "Model::Arm_L", "SubDeformer::Cluster buste Arm_L"
+	Connect: "OO", "Model::Arm_L", "SubDeformer::Cluster bras_R Arm_L"
 	Connect: "OO", "Model::Forearm_L", "SubDeformer::Cluster bras_L Forearm_L"
+	Connect: "OO", "Model::Forearm_L", "SubDeformer::Cluster tete Forearm_L"
+	Connect: "OO", "Model::Forearm_L", "SubDeformer::Cluster robe Forearm_L"
 	Connect: "OO", "Model::Forearm_L", "SubDeformer::Cluster volant Forearm_L"
-	Connect: "OO", "Model::Wrist_L", "SubDeformer::Cluster bras_R Wrist_L"
-	Connect: "OO", "Model::Wrist_L", "SubDeformer::Cluster robe Wrist_L"
-	Connect: "OO", "Model::Wrist_L", "SubDeformer::Cluster buste Wrist_L"
-	Connect: "OO", "Model::Wrist_L", "SubDeformer::Cluster tete Wrist_L"
+	Connect: "OO", "Model::Forearm_L", "SubDeformer::Cluster buste Forearm_L"
+	Connect: "OO", "Model::Forearm_L", "SubDeformer::Cluster bras_R Forearm_L"
 	Connect: "OO", "Model::Wrist_L", "SubDeformer::Cluster bras_L Wrist_L"
+	Connect: "OO", "Model::Wrist_L", "SubDeformer::Cluster tete Wrist_L"
+	Connect: "OO", "Model::Wrist_L", "SubDeformer::Cluster robe Wrist_L"
 	Connect: "OO", "Model::Wrist_L", "SubDeformer::Cluster volant Wrist_L"
-	Connect: "OO", "Model::Grab", "SubDeformer::Cluster bras_R Grab"
-	Connect: "OO", "Model::Grab", "SubDeformer::Cluster robe Grab"
-	Connect: "OO", "Model::Grab", "SubDeformer::Cluster buste Grab"
-	Connect: "OO", "Model::Grab", "SubDeformer::Cluster tete Grab"
+	Connect: "OO", "Model::Wrist_L", "SubDeformer::Cluster buste Wrist_L"
+	Connect: "OO", "Model::Wrist_L", "SubDeformer::Cluster bras_R Wrist_L"
 	Connect: "OO", "Model::Grab", "SubDeformer::Cluster bras_L Grab"
+	Connect: "OO", "Model::Grab", "SubDeformer::Cluster tete Grab"
+	Connect: "OO", "Model::Grab", "SubDeformer::Cluster robe Grab"
 	Connect: "OO", "Model::Grab", "SubDeformer::Cluster volant Grab"
-	Connect: "OO", "Model::Dress_T", "SubDeformer::Cluster bras_R Dress_T"
-	Connect: "OO", "Model::Dress_T", "SubDeformer::Cluster robe Dress_T"
-	Connect: "OO", "Model::Dress_T", "SubDeformer::Cluster buste Dress_T"
-	Connect: "OO", "Model::Dress_T", "SubDeformer::Cluster tete Dress_T"
+	Connect: "OO", "Model::Grab", "SubDeformer::Cluster buste Grab"
+	Connect: "OO", "Model::Grab", "SubDeformer::Cluster bras_R Grab"
 	Connect: "OO", "Model::Dress_T", "SubDeformer::Cluster bras_L Dress_T"
+	Connect: "OO", "Model::Dress_T", "SubDeformer::Cluster tete Dress_T"
+	Connect: "OO", "Model::Dress_T", "SubDeformer::Cluster robe Dress_T"
 	Connect: "OO", "Model::Dress_T", "SubDeformer::Cluster volant Dress_T"
-	Connect: "OO", "Model::Dress_B", "SubDeformer::Cluster bras_R Dress_B"
-	Connect: "OO", "Model::Dress_B", "SubDeformer::Cluster robe Dress_B"
-	Connect: "OO", "Model::Dress_B", "SubDeformer::Cluster buste Dress_B"
-	Connect: "OO", "Model::Dress_B", "SubDeformer::Cluster tete Dress_B"
+	Connect: "OO", "Model::Dress_T", "SubDeformer::Cluster buste Dress_T"
+	Connect: "OO", "Model::Dress_T", "SubDeformer::Cluster bras_R Dress_T"
 	Connect: "OO", "Model::Dress_B", "SubDeformer::Cluster bras_L Dress_B"
+	Connect: "OO", "Model::Dress_B", "SubDeformer::Cluster tete Dress_B"
+	Connect: "OO", "Model::Dress_B", "SubDeformer::Cluster robe Dress_B"
 	Connect: "OO", "Model::Dress_B", "SubDeformer::Cluster volant Dress_B"
+	Connect: "OO", "Model::Dress_B", "SubDeformer::Cluster buste Dress_B"
+	Connect: "OO", "Model::Dress_B", "SubDeformer::Cluster bras_R Dress_B"
 	Connect: "OO", "Model::Root", "Model::Armature"
 	Connect: "OO", "Model::Torso_M", "Model::Root"
 	Connect: "OO", "Model::Torso_T", "Model::Torso_M"
@@ -6661,7 +6661,7 @@ Connections:  {
 ;----------------------------------------------------
 
 Takes:  {
-	Current: "rest"
+	Current: "success"
 	Take: "attack" {
 		FileName: "attack.tak"
 		LocalTime: 0,34639618500
@@ -7953,38 +7953,38 @@ Takes:  {
 						Color: 1,0,0
 					}
 					Channel: "Y" {
-						Default: 0.000000000000000
+						Default: -0.000000000000000
 						KeyVer: 4005
 						KeyCount: 1
 						Key: 
-							1924423250,0.000000000000000,L
+							1924423250,-0.000000000000000,L
 						Color: 0,1,0
 					}
 					Channel: "Z" {
-						Default: -129.891141785671550
+						Default: -72.114475973968325
 						KeyVer: 4005
 						KeyCount: 1
 						Key: 
-							1924423250,-129.891141785671550,L
+							1924423250,-72.114475973968325,L
 						Color: 0,0,1
 					}
 					LayerType: 2
 				}
 				Channel: "S" {
 					Channel: "X" {
-						Default: 1.000000238418579
+						Default: 1.000000000000000
 						KeyVer: 4005
 						KeyCount: 1
 						Key: 
-							1924423250,1.000000238418579,L
+							1924423250,1.000000000000000,L
 						Color: 1,0,0
 					}
 					Channel: "Y" {
-						Default: 1.000000238418579
+						Default: 1.000000000000000
 						KeyVer: 4005
 						KeyCount: 1
 						Key: 
-							1924423250,1.000000238418579,L
+							1924423250,1.000000000000000,L
 						Color: 0,1,0
 					}
 					Channel: "Z" {
@@ -20646,31 +20646,32 @@ Takes:  {
 					Channel: "Z" {
 						Default: -20.061896299962964
 						KeyVer: 4005
-						KeyCount: 24
+						KeyCount: 25
 						Key: 
 							0,-20.061896299962964,L,
-							1924423250,-19.948996688077401,L,
-							3848846500,-19.707402651850643,L,
+							1924423250,-20.029965165593200,L,
+							3848846500,-19.879531956671180,L,
 							5773269750,-19.594509870154248,L,
-							7697693000,-19.646458581434000,L,
-							9622116250,-19.803284847419143,L,
-							11546539500,-20.061892884868382,L,
-							13470962750,-20.410958240137841,L,
-							15395386000,-20.828976062625777,L,
-							19244232500,-21.740224043194427,L,
-							21168655750,-22.158241865682360,L,
-							23093079000,-22.507308928499118,L,
-							25017502250,-22.765918673495644,L,
-							26941925500,-22.922743231933499,L,
-							28866348750,-22.974695358307834,L,
-							30790772000,-22.894908503518444,L,
-							32715195250,-22.655534278771935,L,
-							34639618500,-22.271155137946266,L,
-							36564041750,-21.782137499036150,L,
-							38488465000,-21.254520753579055,L,
-							40412888250,-20.765487746743307,L,
-							42337311500,-20.381081285160956,L,
-							44261734750,-20.141684862299648,L,
+							7697693000,-19.207878474449771,L,
+							9622116250,-18.711955514288782,L,
+							11546539500,-18.115546811058710,L,
+							13470962750,-17.437821290665170,L,
+							15395386000,-16.709887049682937,L,
+							17319809250,-15.973454345825926,L,
+							19244232500,-15.275429503219137,L,
+							21168655750,-14.659979940130389,L,
+							23093079000,-14.161382107135699,L,
+							25017502250,-13.800545774605382,L,
+							26941925500,-13.585704735583878,L,
+							28866348750,-13.515504905068235,L,
+							30790772000,-13.694729068889112,L,
+							32715195250,-14.232570607533701,L,
+							34639618500,-15.096406829978774,L,
+							36564041750,-16.195592588201933,L,
+							38488465000,-17.381637862100018,L,
+							40412888250,-18.480864601458194,L,
+							42337311500,-19.344758880511215,L,
+							44261734750,-19.882646522932699,L,
 							46186158000,-20.061896299962964,L
 						Color: 0,0,1
 					}
@@ -20755,32 +20756,30 @@ Takes:  {
 					Channel: "Z" {
 						Default: -3.398751009534709
 						KeyVer: 4005
-						KeyCount: 25
+						KeyCount: 23
 						Key: 
 							0,-3.398751009534709,L,
-							1924423250,-3.399473728926260,L,
-							3848846500,-3.409873759154648,L,
-							5773269750,-3.446479517681044,L,
-							7697693000,-3.525059776864869,L,
-							9622116250,-3.650810389673794,L,
-							11546539500,-3.817731248365380,L,
-							13470962750,-4.085123762860886,L,
-							15395386000,-4.518950485069616,L,
-							17319809250,-5.111233754041005,L,
-							19244232500,-5.839964992722013,L,
-							21168655750,-6.666235174732071,L,
-							23093079000,-7.535260206512231,L,
-							25017502250,-8.383026701387582,L,
-							26941925500,-9.146989336467934,L,
-							28866348750,-9.776428834524140,L,
-							30790772000,-10.238003627122829,L,
-							32715195250,-10.515702897075869,L,
-							34639618500,-10.607152299873039,L,
-							36564041750,-10.162942409465435,L,
-							38488465000,-8.869002344796106,L,
-							40412888250,-7.006518614276202,L,
-							42337311500,-5.142130114751514,L,
-							44261734750,-3.844614019164865,L,
+							1924423250,-3.424679047954275,L,
+							3848846500,-3.500107601722968,L,
+							7697693000,-3.716675184500601,L,
+							9622116250,-3.791897765377136,L,
+							11546539500,-3.817729967704910,L,
+							13470962750,-3.542649008081508,L,
+							15395386000,-2.711620532097486,L,
+							17319809250,-1.339545984809379,L,
+							19244232500,0.515232011666292,L,
+							21168655750,2.739454193295482,L,
+							25017502250,7.591915771903760,L,
+							26941925500,9.816141261905829,L,
+							28866348750,11.670920112155146,L,
+							30790772000,13.042994979608370,L,
+							32715195250,13.874015558186166,L,
+							34639618500,14.149103134555325,L,
+							36564041750,13.070630778763848,L,
+							38488465000,9.923232651675951,L,
+							40412888250,5.383879537781890,L,
+							42337311500,0.839857135816486,L,
+							44261734750,-2.316256952982569,L,
 							46186158000,-3.398751009534709,L
 						Color: 0,0,1
 					}
@@ -23174,1740 +23173,6 @@ Takes:  {
 			}
 		}
 	}
-	Take: "take_001" {
-		FileName: "take_001.tak"
-		LocalTime: 0,46186158000
-		ReferenceTime: 0,46186158000
-
-		;Models animation
-		;----------------------------------------------------
-		Model: "Model::Root" {
-			Version: 1.1
-			Channel: "Transform" {
-				Channel: "T" {
-					Channel: "X" {
-						Default: -0.961173951625824
-						KeyVer: 4005
-						KeyCount: 12
-						Key: 
-							0,-0.961173951625824,L,
-							1924423250,-0.924551486968994,L,
-							3848846500,-0.815236449241638,L,
-							5773269750,-0.643141388893127,L,
-							9622116250,-0.223863482475281,L,
-							11546539500,-0.051768302917480,L,
-							13470962750,0.057546675205231,L,
-							15395386000,0.094169199466705,L,
-							38488465000,0.094169199466705,L,
-							40412888250,-0.051768362522125,L,
-							44261734750,-0.815236449241638,L,
-							46186158000,-0.961173951625824,L
-						Color: 1,0,0
-					}
-					Channel: "Y" {
-						Default: 16.089630126953125
-						KeyVer: 4005
-						KeyCount: 12
-						Key: 
-							0,16.089630126953125,L,
-							1924423250,16.102565765380859,L,
-							3848846500,16.141176223754883,L,
-							5773269750,16.201959609985352,L,
-							9622116250,16.350049972534180,L,
-							11546539500,16.410835266113281,L,
-							13470962750,16.449445724487305,L,
-							15395386000,16.462381362915039,L,
-							38488465000,16.462381362915039,L,
-							40412888250,16.410835266113281,L,
-							44261734750,16.141176223754883,L,
-							46186158000,16.089630126953125,L
-						Color: 0,1,0
-					}
-					Channel: "Z" {
-						Default: -0.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,-0.000000000000000,L
-						Color: 0,0,1
-					}
-					LayerType: 1
-				}
-				Channel: "R" {
-					Channel: "X" {
-						Default: 0.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,0.000000000000000,L
-						Color: 1,0,0
-					}
-					Channel: "Y" {
-						Default: -0.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,-0.000000000000000,L
-						Color: 0,1,0
-					}
-					Channel: "Z" {
-						Default: -0.851649404057643
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,-0.851649404057643,L
-						Color: 0,0,1
-					}
-					LayerType: 2
-				}
-				Channel: "S" {
-					Channel: "X" {
-						Default: 1.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,1.000000000000000,L
-						Color: 1,0,0
-					}
-					Channel: "Y" {
-						Default: 1.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,1.000000000000000,L
-						Color: 0,1,0
-					}
-					Channel: "Z" {
-						Default: 1.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,1.000000000000000,L
-						Color: 0,0,1
-					}
-					LayerType: 3
-				}
-			}
-		}
-		Model: "Model::Torso_M" {
-			Version: 1.1
-			Channel: "Transform" {
-				Channel: "T" {
-					Channel: "X" {
-						Default: 2.038057565689087
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,2.038057565689087,L
-						Color: 1,0,0
-					}
-					Channel: "Y" {
-						Default: 0.000000301748514
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,0.000000301748514,L
-						Color: 0,1,0
-					}
-					Channel: "Z" {
-						Default: -0.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,-0.000000000000000,L
-						Color: 0,0,1
-					}
-					LayerType: 1
-				}
-				Channel: "R" {
-					Channel: "X" {
-						Default: 0.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,0.000000000000000,L
-						Color: 1,0,0
-					}
-					Channel: "Y" {
-						Default: 0.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,0.000000000000000,L
-						Color: 0,1,0
-					}
-					Channel: "Z" {
-						Default: 79.950615404929309
-						KeyVer: 4005
-						KeyCount: 25
-						Key: 
-							0,79.950615404929309,L,
-							1924423250,79.830561169888156,L,
-							3848846500,79.461970011328958,L,
-							5773269750,78.856501062164867,L,
-							7697693000,78.071418628397225,L,
-							9622116250,77.207645585201973,L,
-							11546539500,76.378071299180931,L,
-							13470962750,75.669070342577939,L,
-							15395386000,75.125305322375667,L,
-							17319809250,74.662450723081250,L,
-							19244232500,74.205750124228999,L,
-							21168655750,73.801969831065932,L,
-							23093079000,73.501933281206050,L,
-							25017502250,73.330440891525612,L,
-							26941925500,73.278545114211937,L,
-							28866348750,73.289275341398010,L,
-							30790772000,73.354537798917391,L,
-							32715195250,73.537245359214964,L,
-							34639618500,73.892360554541753,L,
-							36564041750,74.431563008378475,L,
-							38488465000,75.125305322375667,L,
-							40412888250,76.279136009053431,L,
-							42337311500,77.981328433244883,L,
-							44261734750,79.431835216710894,L,
-							46186158000,79.950615404929309,L
-						Color: 0,0,1
-					}
-					LayerType: 2
-				}
-				Channel: "S" {
-					Channel: "X" {
-						Default: 0.999999880790710
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,0.999999880790710,L
-						Color: 1,0,0
-					}
-					Channel: "Y" {
-						Default: 0.999999880790710
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,0.999999880790710,L
-						Color: 0,1,0
-					}
-					Channel: "Z" {
-						Default: 0.999999880790710
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,0.999999880790710,L
-						Color: 0,0,1
-					}
-					LayerType: 3
-				}
-			}
-		}
-		Model: "Model::Torso_T" {
-			Version: 1.1
-			Channel: "Transform" {
-				Channel: "T" {
-					Channel: "X" {
-						Default: 1.739127159118652
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,1.739127159118652,L
-						Color: 1,0,0
-					}
-					Channel: "Y" {
-						Default: 0.000000119209290
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,0.000000119209290,L
-						Color: 0,1,0
-					}
-					Channel: "Z" {
-						Default: -0.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,-0.000000000000000,L
-						Color: 0,0,1
-					}
-					LayerType: 1
-				}
-				Channel: "R" {
-					Channel: "X" {
-						Default: -0.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,-0.000000000000000,L
-						Color: 1,0,0
-					}
-					Channel: "Y" {
-						Default: -0.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,-0.000000000000000,L
-						Color: 0,1,0
-					}
-					Channel: "Z" {
-						Default: 31.577026627339514
-						KeyVer: 4005
-						KeyCount: 21
-						Key: 
-							0,31.577026627339514,L,
-							1924423250,30.812359629001005,L,
-							3848846500,28.524673143873148,L,
-							5773269750,24.910835421950225,L,
-							9622116250,16.084021448109933,L,
-							11546539500,12.470185433734304,L,
-							13470962750,10.182492972190923,L,
-							15395386000,9.417825973852414,L,
-							17319809250,9.495023333172727,L,
-							19244232500,9.719692160636217,L,
-							23093079000,10.365647909879137,L,
-							25017502250,10.590321859984506,L,
-							26941925500,10.667513242889294,L,
-							28866348750,10.590317591116275,L,
-							30790772000,10.365646202331844,L,
-							34639618500,9.719691306862572,L,
-							36564041750,9.495022479399079,L,
-							38488465000,9.417825973852414,L,
-							40412888250,12.470186287507952,L,
-							44261734750,28.524671436325853,L,
-							46186158000,31.577026627339514,L
-						Color: 0,0,1
-					}
-					LayerType: 2
-				}
-				Channel: "S" {
-					Channel: "X" {
-						Default: 0.999999880790710
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,0.999999880790710,L
-						Color: 1,0,0
-					}
-					Channel: "Y" {
-						Default: 0.999999880790710
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,0.999999880790710,L
-						Color: 0,1,0
-					}
-					Channel: "Z" {
-						Default: 1.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,1.000000000000000,L
-						Color: 0,0,1
-					}
-					LayerType: 3
-				}
-			}
-		}
-		Model: "Model::Shoulder_R" {
-			Version: 1.1
-			Channel: "Transform" {
-				Channel: "T" {
-					Channel: "X" {
-						Default: 2.358103513717651
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,2.358103513717651,L
-						Color: 1,0,0
-					}
-					Channel: "Y" {
-						Default: -0.000000178813934
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,-0.000000178813934,L
-						Color: 0,1,0
-					}
-					Channel: "Z" {
-						Default: -0.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,-0.000000000000000,L
-						Color: 0,0,1
-					}
-					LayerType: 1
-				}
-				Channel: "R" {
-					Channel: "X" {
-						Default: -0.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,-0.000000000000000,L
-						Color: 1,0,0
-					}
-					Channel: "Y" {
-						Default: -0.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,-0.000000000000000,L
-						Color: 0,1,0
-					}
-					Channel: "Z" {
-						Default: 93.441946562977606
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,93.441946562977606,L
-						Color: 0,0,1
-					}
-					LayerType: 2
-				}
-				Channel: "S" {
-					Channel: "X" {
-						Default: 1.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,1.000000000000000,L
-						Color: 1,0,0
-					}
-					Channel: "Y" {
-						Default: 1.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,1.000000000000000,L
-						Color: 0,1,0
-					}
-					Channel: "Z" {
-						Default: 0.999999940395355
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,0.999999940395355,L
-						Color: 0,0,1
-					}
-					LayerType: 3
-				}
-			}
-		}
-		Model: "Model::Arm_R" {
-			Version: 1.1
-			Channel: "Transform" {
-				Channel: "T" {
-					Channel: "X" {
-						Default: 0.665528714656830
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,0.665528714656830,L
-						Color: 1,0,0
-					}
-					Channel: "Y" {
-						Default: 0.000000616535544
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,0.000000616535544,L
-						Color: 0,1,0
-					}
-					Channel: "Z" {
-						Default: 0.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,0.000000000000000,L
-						Color: 0,0,1
-					}
-					LayerType: 1
-				}
-				Channel: "R" {
-					Channel: "X" {
-						Default: -0.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,-0.000000000000000,L
-						Color: 1,0,0
-					}
-					Channel: "Y" {
-						Default: -0.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,-0.000000000000000,L
-						Color: 0,1,0
-					}
-					Channel: "Z" {
-						Default: 48.568385772718273
-						KeyVer: 4005
-						KeyCount: 21
-						Key: 
-							0,48.568385772718273,L,
-							1924423250,47.894481743165343,L,
-							3848846500,45.879340296488117,L,
-							5773269750,42.698517784923162,L,
-							9622116250,34.933781151545404,L,
-							11546539500,31.752958639980449,L,
-							13470962750,29.737827438586972,L,
-							15395386000,29.063913163750293,L,
-							17319809250,29.365493336362604,L,
-							19244232500,30.243367305099326,L,
-							23093079000,32.767835958183674,L,
-							25017502250,33.645716757109568,L,
-							26941925500,33.947296929721880,L,
-							28866348750,33.645716757109568,L,
-							30790772000,32.767842788372846,L,
-							34639618500,30.243370720193912,L,
-							36564041750,29.365496751457187,L,
-							38488465000,29.063913163750293,L,
-							40412888250,31.752958639980449,L,
-							44261734750,45.879343711582699,L,
-							46186158000,48.568385772718273,L
-						Color: 0,0,1
-					}
-					LayerType: 2
-				}
-				Channel: "S" {
-					Channel: "X" {
-						Default: 1.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,1.000000000000000,L
-						Color: 1,0,0
-					}
-					Channel: "Y" {
-						Default: 1.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,1.000000000000000,L
-						Color: 0,1,0
-					}
-					Channel: "Z" {
-						Default: 1.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,1.000000000000000,L
-						Color: 0,0,1
-					}
-					LayerType: 3
-				}
-			}
-		}
-		Model: "Model::Forearm_R" {
-			Version: 1.1
-			Channel: "Transform" {
-				Channel: "T" {
-					Channel: "X" {
-						Default: 5.281560897827148
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,5.281560897827148,L
-						Color: 1,0,0
-					}
-					Channel: "Y" {
-						Default: -0.000000476837158
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,-0.000000476837158,L
-						Color: 0,1,0
-					}
-					Channel: "Z" {
-						Default: 0.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,0.000000000000000,L
-						Color: 0,0,1
-					}
-					LayerType: 1
-				}
-				Channel: "R" {
-					Channel: "X" {
-						Default: 0.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,0.000000000000000,L
-						Color: 1,0,0
-					}
-					Channel: "Y" {
-						Default: -0.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,-0.000000000000000,L
-						Color: 0,1,0
-					}
-					Channel: "Z" {
-						Default: 86.348098430634209
-						KeyVer: 4005
-						KeyCount: 23
-						Key: 
-							0,86.348098430634209,L,
-							1924423250,85.648079172789778,L,
-							3848846500,83.554475928022143,L,
-							5773269750,80.248807803713291,L,
-							7697693000,76.212937815617764,L,
-							9622116250,72.176555563334489,L,
-							11546539500,68.869671665353380,L,
-							13470962750,66.774941439372682,L,
-							15395386000,66.074485049421369,L,
-							17319809250,66.231142268224559,L,
-							19244232500,66.687050565133092,L,
-							23093079000,67.997634093262420,L,
-							25017502250,68.453344314685012,L,
-							26941925500,68.609899080650649,L,
-							28866348750,68.453344314685012,L,
-							30790772000,67.997634093262420,L,
-							34639618500,66.687050565133092,L,
-							36564041750,66.231142268224559,L,
-							38488465000,66.074485049421369,L,
-							40412888250,68.869671665353380,L,
-							42337311500,76.212937815617764,L,
-							44261734750,83.554482758211307,L,
-							46186158000,86.348098430634209,L
-						Color: 0,0,1
-					}
-					LayerType: 2
-				}
-				Channel: "S" {
-					Channel: "X" {
-						Default: 1.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,1.000000000000000,L
-						Color: 1,0,0
-					}
-					Channel: "Y" {
-						Default: 1.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,1.000000000000000,L
-						Color: 0,1,0
-					}
-					Channel: "Z" {
-						Default: 1.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,1.000000000000000,L
-						Color: 0,0,1
-					}
-					LayerType: 3
-				}
-			}
-		}
-		Model: "Model::Wrist_R" {
-			Version: 1.1
-			Channel: "Transform" {
-				Channel: "T" {
-					Channel: "X" {
-						Default: 2.293662309646606
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,2.293662309646606,L
-						Color: 1,0,0
-					}
-					Channel: "Y" {
-						Default: 0.779227852821350
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,0.779227852821350,L
-						Color: 0,1,0
-					}
-					Channel: "Z" {
-						Default: -0.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,-0.000000000000000,L
-						Color: 0,0,1
-					}
-					LayerType: 1
-				}
-				Channel: "R" {
-					Channel: "X" {
-						Default: -0.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,-0.000000000000000,L
-						Color: 1,0,0
-					}
-					Channel: "Y" {
-						Default: -0.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,-0.000000000000000,L
-						Color: 0,1,0
-					}
-					Channel: "Z" {
-						Default: -77.011503042806993
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,-77.011503042806993,L
-						Color: 0,0,1
-					}
-					LayerType: 2
-				}
-				Channel: "S" {
-					Channel: "X" {
-						Default: 0.999999940395355
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,0.999999940395355,L
-						Color: 1,0,0
-					}
-					Channel: "Y" {
-						Default: 0.999999940395355
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,0.999999940395355,L
-						Color: 0,1,0
-					}
-					Channel: "Z" {
-						Default: 1.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,1.000000000000000,L
-						Color: 0,0,1
-					}
-					LayerType: 3
-				}
-			}
-		}
-		Model: "Model::Neck" {
-			Version: 1.1
-			Channel: "Transform" {
-				Channel: "T" {
-					Channel: "X" {
-						Default: 2.358103513717651
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,2.358103513717651,L
-						Color: 1,0,0
-					}
-					Channel: "Y" {
-						Default: -0.000000178813934
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,-0.000000178813934,L
-						Color: 0,1,0
-					}
-					Channel: "Z" {
-						Default: -0.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,-0.000000000000000,L
-						Color: 0,0,1
-					}
-					LayerType: 1
-				}
-				Channel: "R" {
-					Channel: "X" {
-						Default: -0.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,-0.000000000000000,L
-						Color: 1,0,0
-					}
-					Channel: "Y" {
-						Default: -0.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,-0.000000000000000,L
-						Color: 0,1,0
-					}
-					Channel: "Z" {
-						Default: -19.594511577701542
-						KeyVer: 4005
-						KeyCount: 21
-						Key: 
-							0,-19.594511577701542,L,
-							1924423250,-18.825990645123859,L,
-							3848846500,-16.526715036521797,L,
-							5773269750,-12.894447756670916,L,
-							9622116250,-4.022395732410402,L,
-							11546539500,-0.390126371486258,L,
-							13470962750,1.909152919014653,L,
-							15395386000,2.677671930601632,L,
-							17319809250,2.291194427596890,L,
-							19244232500,1.166045092626141,L,
-							23093079000,-2.069873886930581,L,
-							25017502250,-3.195017779094335,L,
-							26941925500,-3.581500191297543,L,
-							28866348750,-3.195021194188920,L,
-							30790772000,-2.069874100373992,L,
-							34639618500,1.166048827885844,L,
-							36564041750,2.291197842691475,L,
-							38488465000,2.677671930601632,L,
-							40412888250,-0.390127011816492,L,
-							44261734750,-16.526715036521797,L,
-							46186158000,-19.594511577701542,L
-						Color: 0,0,1
-					}
-					LayerType: 2
-				}
-				Channel: "S" {
-					Channel: "X" {
-						Default: 1.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,1.000000000000000,L
-						Color: 1,0,0
-					}
-					Channel: "Y" {
-						Default: 1.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,1.000000000000000,L
-						Color: 0,1,0
-					}
-					Channel: "Z" {
-						Default: 1.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,1.000000000000000,L
-						Color: 0,0,1
-					}
-					LayerType: 3
-				}
-			}
-		}
-		Model: "Model::Head" {
-			Version: 1.1
-			Channel: "Transform" {
-				Channel: "T" {
-					Channel: "X" {
-						Default: 1.507312655448914
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,1.507312655448914,L
-						Color: 1,0,0
-					}
-					Channel: "Y" {
-						Default: 0.000000089406967
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,0.000000089406967,L
-						Color: 0,1,0
-					}
-					Channel: "Z" {
-						Default: 0.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,0.000000000000000,L
-						Color: 0,0,1
-					}
-					LayerType: 1
-				}
-				Channel: "R" {
-					Channel: "X" {
-						Default: 0.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,0.000000000000000,L
-						Color: 1,0,0
-					}
-					Channel: "Y" {
-						Default: 0.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,0.000000000000000,L
-						Color: 0,1,0
-					}
-					Channel: "Z" {
-						Default: 3.809652842124559
-						KeyVer: 4005
-						KeyCount: 21
-						Key: 
-							0,3.809652842124559,L,
-							1924423250,4.513167022389916,L,
-							3848846500,6.617156850451015,L,
-							5773269750,9.939042832057215,L,
-							9622116250,18.049563768581898,L,
-							11546539500,21.371450177074919,L,
-							13470962750,23.475443847117429,L,
-							15395386000,24.178958454269608,L,
-							17319809250,24.135065951115877,L,
-							19244232500,24.007339706089528,L,
-							23093079000,23.640097509891397,L,
-							25017502250,23.512364434675877,L,
-							26941925500,23.468478761711317,L,
-							28866348750,23.512366142223172,L,
-							30790772000,23.640094094796812,L,
-							34639618500,24.007336290994942,L,
-							36564041750,24.135067658663168,L,
-							38488465000,24.178958454269608,L,
-							40412888250,21.371448469527628,L,
-							44261734750,6.617158131111484,L,
-							46186158000,3.809652842124559,L
-						Color: 0,0,1
-					}
-					LayerType: 2
-				}
-				Channel: "S" {
-					Channel: "X" {
-						Default: 1.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,1.000000000000000,L
-						Color: 1,0,0
-					}
-					Channel: "Y" {
-						Default: 1.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,1.000000000000000,L
-						Color: 0,1,0
-					}
-					Channel: "Z" {
-						Default: 1.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,1.000000000000000,L
-						Color: 0,0,1
-					}
-					LayerType: 3
-				}
-			}
-		}
-		Model: "Model::Shoulder_L" {
-			Version: 1.1
-			Channel: "Transform" {
-				Channel: "T" {
-					Channel: "X" {
-						Default: 2.358103513717651
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,2.358103513717651,L
-						Color: 1,0,0
-					}
-					Channel: "Y" {
-						Default: -0.000000178813934
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,-0.000000178813934,L
-						Color: 0,1,0
-					}
-					Channel: "Z" {
-						Default: -0.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,-0.000000000000000,L
-						Color: 0,0,1
-					}
-					LayerType: 1
-				}
-				Channel: "R" {
-					Channel: "X" {
-						Default: -0.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,-0.000000000000000,L
-						Color: 1,0,0
-					}
-					Channel: "Y" {
-						Default: 0.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,0.000000000000000,L
-						Color: 0,1,0
-					}
-					Channel: "Z" {
-						Default: -164.488235592270826
-						KeyVer: 4005
-						KeyCount: 12
-						Key: 
-							0,-164.488235592270826,L,
-							1924423250,-162.277808791939464,L,
-							3848846500,-155.541316156970623,L,
-							5773269750,-144.594394389288510,L,
-							9622116250,-117.274143143275339,L,
-							11546539500,-106.327207715214868,L,
-							13470962750,-99.590728740624371,L,
-							15395386000,-97.380288279914652,L,
-							38488465000,-97.380288279914652,L,
-							40412888250,-106.327200885025690,L,
-							44261734750,-155.541302496592294,L,
-							46186158000,-164.488235592270826,L
-						Color: 0,0,1
-					}
-					LayerType: 2
-				}
-				Channel: "S" {
-					Channel: "X" {
-						Default: 0.999999940395355
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,0.999999940395355,L
-						Color: 1,0,0
-					}
-					Channel: "Y" {
-						Default: 0.999999940395355
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,0.999999940395355,L
-						Color: 0,1,0
-					}
-					Channel: "Z" {
-						Default: 1.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,1.000000000000000,L
-						Color: 0,0,1
-					}
-					LayerType: 3
-				}
-			}
-		}
-		Model: "Model::Arm_L" {
-			Version: 1.1
-			Channel: "Transform" {
-				Channel: "T" {
-					Channel: "X" {
-						Default: 0.564056217670441
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,0.564056217670441,L
-						Color: 1,0,0
-					}
-					Channel: "Y" {
-						Default: 0.000000238418579
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,0.000000238418579,L
-						Color: 0,1,0
-					}
-					Channel: "Z" {
-						Default: 0.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,0.000000000000000,L
-						Color: 0,0,1
-					}
-					LayerType: 1
-				}
-				Channel: "R" {
-					Channel: "X" {
-						Default: 0.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,0.000000000000000,L
-						Color: 1,0,0
-					}
-					Channel: "Y" {
-						Default: 0.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,0.000000000000000,L
-						Color: 0,1,0
-					}
-					Channel: "Z" {
-						Default: -53.501452334712461
-						KeyVer: 4005
-						KeyCount: 21
-						Key: 
-							0,-53.501452334712461,L,
-							1924423250,-50.738121721069348,L,
-							3848846500,-42.198728937691953,L,
-							5773269750,-28.012043541002331,L,
-							9622116250,8.018768444083094,L,
-							11546539500,22.205455548320007,L,
-							13470962750,30.744860284528450,L,
-							15395386000,33.508190898171563,L,
-							17319809250,33.233788048266689,L,
-							19244232500,32.435110122956154,L,
-							23093079000,30.138418033407646,L,
-							25017502250,29.339743523191693,L,
-							26941925500,29.065357748759748,L,
-							28866348750,29.339740108097107,L,
-							30790772000,30.138414618313060,L,
-							34639618500,32.435106707861571,L,
-							36564041750,33.233801708645032,L,
-							38488465000,33.508190898171563,L,
-							40412888250,22.205455548320007,L,
-							44261734750,-42.198725522597364,L,
-							46186158000,-53.501452334712461,L
-						Color: 0,0,1
-					}
-					LayerType: 2
-				}
-				Channel: "S" {
-					Channel: "X" {
-						Default: 1.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,1.000000000000000,L
-						Color: 1,0,0
-					}
-					Channel: "Y" {
-						Default: 1.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,1.000000000000000,L
-						Color: 0,1,0
-					}
-					Channel: "Z" {
-						Default: 1.000000119209290
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,1.000000119209290,L
-						Color: 0,0,1
-					}
-					LayerType: 3
-				}
-			}
-		}
-		Model: "Model::Forearm_L" {
-			Version: 1.1
-			Channel: "Transform" {
-				Channel: "T" {
-					Channel: "X" {
-						Default: 5.281559467315674
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,5.281559467315674,L
-						Color: 1,0,0
-					}
-					Channel: "Y" {
-						Default: 0.000000417232513
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,0.000000417232513,L
-						Color: 0,1,0
-					}
-					Channel: "Z" {
-						Default: 0.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,0.000000000000000,L
-						Color: 0,0,1
-					}
-					LayerType: 1
-				}
-				Channel: "R" {
-					Channel: "X" {
-						Default: 0.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,0.000000000000000,L
-						Color: 1,0,0
-					}
-					Channel: "Y" {
-						Default: -0.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,-0.000000000000000,L
-						Color: 0,1,0
-					}
-					Channel: "Z" {
-						Default: 86.348105260823388
-						KeyVer: 4005
-						KeyCount: 21
-						Key: 
-							0,86.348105260823388,L,
-							1924423250,85.241785370012153,L,
-							3848846500,81.923495056117147,L,
-							5773269750,76.661489998790202,L,
-							9622116250,63.772123902861765,L,
-							11546539500,58.510118845534819,L,
-							13470962750,55.191821701450635,L,
-							15395386000,54.085505225733996,L,
-							17319809250,54.593299054672450,L,
-							19244232500,56.071935972235117,L,
-							23093079000,60.325412372192353,L,
-							25017502250,61.804045874660439,L,
-							26941925500,62.311843118693474,L,
-							28866348750,61.804039044471267,L,
-							30790772000,60.325412372192353,L,
-							34639618500,56.071932557140535,L,
-							36564041750,54.593302469767032,L,
-							38488465000,54.085505225733996,L,
-							40412888250,58.510112015345655,L,
-							44261734750,81.923495056117147,L,
-							46186158000,86.348105260823388,L
-						Color: 0,0,1
-					}
-					LayerType: 2
-				}
-				Channel: "S" {
-					Channel: "X" {
-						Default: 1.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,1.000000000000000,L
-						Color: 1,0,0
-					}
-					Channel: "Y" {
-						Default: 1.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,1.000000000000000,L
-						Color: 0,1,0
-					}
-					Channel: "Z" {
-						Default: 1.000000119209290
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,1.000000119209290,L
-						Color: 0,0,1
-					}
-					LayerType: 3
-				}
-			}
-		}
-		Model: "Model::Wrist_L" {
-			Version: 1.1
-			Channel: "Transform" {
-				Channel: "T" {
-					Channel: "X" {
-						Default: 2.586897850036621
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,2.586897850036621,L
-						Color: 1,0,0
-					}
-					Channel: "Y" {
-						Default: -0.982161998748779
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,-0.982161998748779,L
-						Color: 0,1,0
-					}
-					Channel: "Z" {
-						Default: -0.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,-0.000000000000000,L
-						Color: 0,0,1
-					}
-					LayerType: 1
-				}
-				Channel: "R" {
-					Channel: "X" {
-						Default: -0.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,-0.000000000000000,L
-						Color: 1,0,0
-					}
-					Channel: "Y" {
-						Default: -0.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,-0.000000000000000,L
-						Color: 0,1,0
-					}
-					Channel: "Z" {
-						Default: -75.377175378208690
-						KeyVer: 4005
-						KeyCount: 22
-						Key: 
-							0,-75.377175378208690,L,
-							1924423250,-75.243699821448502,L,
-							3848846500,-74.841941264279754,L,
-							5773269750,-74.188572198466446,L,
-							7697693000,-73.333835495543113,L,
-							11546539500,-71.397019243172878,L,
-							13470962750,-70.542282540249545,L,
-							15395386000,-69.888920304625401,L,
-							17319809250,-69.487168577645832,L,
-							19244232500,-69.353686190696465,L,
-							21168655750,-69.573215300809522,L,
-							23093079000,-70.234124895466522,L,
-							25017502250,-71.309387916121750,L,
-							26941925500,-72.716693753087497,L,
-							30790772000,-75.906774586072387,L,
-							32715195250,-77.314367290983270,L,
-							34639618500,-78.389862538070275,L,
-							36564041750,-79.050778962916439,L,
-							38488465000,-79.270007544706019,L,
-							40412888250,-78.731508600353820,L,
-							44261734750,-75.915414775372440,L,
-							46186158000,-75.377175378208690,L
-						Color: 0,0,1
-					}
-					LayerType: 2
-				}
-				Channel: "S" {
-					Channel: "X" {
-						Default: 1.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,1.000000000000000,L
-						Color: 1,0,0
-					}
-					Channel: "Y" {
-						Default: 1.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,1.000000000000000,L
-						Color: 0,1,0
-					}
-					Channel: "Z" {
-						Default: 1.000000119209290
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,1.000000119209290,L
-						Color: 0,0,1
-					}
-					LayerType: 3
-				}
-			}
-		}
-		Model: "Model::Grab" {
-			Version: 1.1
-			Channel: "Transform" {
-				Channel: "T" {
-					Channel: "X" {
-						Default: 4.517546653747559
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,4.517546653747559,L
-						Color: 1,0,0
-					}
-					Channel: "Y" {
-						Default: 0.000000476837158
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,0.000000476837158,L
-						Color: 0,1,0
-					}
-					Channel: "Z" {
-						Default: 0.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,0.000000000000000,L
-						Color: 0,0,1
-					}
-					LayerType: 1
-				}
-				Channel: "R" {
-					Channel: "X" {
-						Default: -0.000000000007071
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,-0.000000000007071,L
-						Color: 1,0,0
-					}
-					Channel: "Y" {
-						Default: 0.000000000040710
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,0.000000000040710,L
-						Color: 0,1,0
-					}
-					Channel: "Z" {
-						Default: 86.908255904844495
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,86.908255904844495,L
-						Color: 0,0,1
-					}
-					LayerType: 2
-				}
-				Channel: "S" {
-					Channel: "X" {
-						Default: 1.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,1.000000000000000,L
-						Color: 1,0,0
-					}
-					Channel: "Y" {
-						Default: 1.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,1.000000000000000,L
-						Color: 0,1,0
-					}
-					Channel: "Z" {
-						Default: 1.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,1.000000000000000,L
-						Color: 0,0,1
-					}
-					LayerType: 3
-				}
-			}
-		}
-		Model: "Model::Dress_T" {
-			Version: 1.1
-			Channel: "Transform" {
-				Channel: "T" {
-					Channel: "X" {
-						Default: 2.038057565689087
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,2.038057565689087,L
-						Color: 1,0,0
-					}
-					Channel: "Y" {
-						Default: 0.000000301748514
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,0.000000301748514,L
-						Color: 0,1,0
-					}
-					Channel: "Z" {
-						Default: -0.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,-0.000000000000000,L
-						Color: 0,0,1
-					}
-					LayerType: 1
-				}
-				Channel: "R" {
-					Channel: "X" {
-						Default: 0.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,0.000000000000000,L
-						Color: 1,0,0
-					}
-					Channel: "Y" {
-						Default: -0.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,-0.000000000000000,L
-						Color: 0,1,0
-					}
-					Channel: "Z" {
-						Default: -98.375125823093100
-						KeyVer: 4005
-						KeyCount: 23
-						Key: 
-							0,-98.375125823093100,L,
-							1924423250,-98.643080974421480,L,
-							3848846500,-99.449890239938910,L,
-							5773269750,-100.762741390872677,L,
-							7697693000,-102.481312608693798,L,
-							11546539500,-106.377129567858418,L,
-							13470962750,-108.095755427192898,L,
-							15395386000,-109.408674880018367,L,
-							17319809250,-110.215538787049155,L,
-							19244232500,-110.483514428945057,L,
-							21168655750,-110.347197513490130,L,
-							23093079000,-109.935111710296340,L,
-							25017502250,-109.250576491300308,L,
-							26941925500,-108.311329857776528,L,
-							28866348750,-107.153694755731067,L,
-							30790772000,-105.834566660950060,L,
-							34639618500,-103.023861855223814,L,
-							36564041750,-101.704767911388657,L,
-							38488465000,-100.547173790478226,L,
-							40412888250,-99.607974968278626,L,
-							42337311500,-98.923487560606787,L,
-							44261734750,-98.511429078169670,L,
-							46186158000,-98.375125823093100,L
-						Color: 0,0,1
-					}
-					LayerType: 2
-				}
-				Channel: "S" {
-					Channel: "X" {
-						Default: 1.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,1.000000000000000,L
-						Color: 1,0,0
-					}
-					Channel: "Y" {
-						Default: 1.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,1.000000000000000,L
-						Color: 0,1,0
-					}
-					Channel: "Z" {
-						Default: 0.999999940395355
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,0.999999940395355,L
-						Color: 0,0,1
-					}
-					LayerType: 3
-				}
-			}
-		}
-		Model: "Model::Dress_B" {
-			Version: 1.1
-			Channel: "Transform" {
-				Channel: "T" {
-					Channel: "X" {
-						Default: 6.635222434997559
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,6.635222434997559,L
-						Color: 1,0,0
-					}
-					Channel: "Y" {
-						Default: 0.000000368803740
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,0.000000368803740,L
-						Color: 0,1,0
-					}
-					Channel: "Z" {
-						Default: -0.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,-0.000000000000000,L
-						Color: 0,0,1
-					}
-					LayerType: 1
-				}
-				Channel: "R" {
-					Channel: "X" {
-						Default: -0.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,-0.000000000000000,L
-						Color: 1,0,0
-					}
-					Channel: "Y" {
-						Default: -0.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,-0.000000000000000,L
-						Color: 0,1,0
-					}
-					Channel: "Z" {
-						Default: -18.308161560747379
-						KeyVer: 4005
-						KeyCount: 23
-						Key: 
-							0,-18.308161560747379,L,
-							1924423250,-18.122575075714643,L,
-							3848846500,-17.563908290290716,L,
-							5773269750,-16.655216508018938,L,
-							7697693000,-15.466227422588583,L,
-							11546539500,-12.771683644076575,L,
-							13470962750,-11.582689436004340,L,
-							15395386000,-10.674001068827151,L,
-							17319809250,-10.115338552271453,L,
-							19244232500,-9.929750359691427,L,
-							21168655750,-10.024155526851915,L,
-							23093079000,-10.309520830374638,L,
-							25017502250,-10.783442897445401,L,
-							26941925500,-11.433517250757831,L,
-							28866348750,-12.234488412082198,L,
-							30790772000,-13.146969241796032,L,
-							34639618500,-15.090942678642772,L,
-							36564041750,-16.003421800809313,L,
-							38488465000,-16.804399792322851,L,
-							40412888250,-17.454466461672467,L,
-							42337311500,-17.928389382516876,L,
-							44261734750,-18.213754686039596,L,
-							46186158000,-18.308161560747379,L
-						Color: 0,0,1
-					}
-					LayerType: 2
-				}
-				Channel: "S" {
-					Channel: "X" {
-						Default: 0.999999880790710
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,0.999999880790710,L
-						Color: 1,0,0
-					}
-					Channel: "Y" {
-						Default: 0.999999880790710
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,0.999999880790710,L
-						Color: 0,1,0
-					}
-					Channel: "Z" {
-						Default: 0.999999940395355
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,0.999999940395355,L
-						Color: 0,0,1
-					}
-					LayerType: 3
-				}
-			}
-		}
-		Model: "Model::Armature" {
-			Version: 1.1
-			Channel: "Transform" {
-				Channel: "T" {
-					Channel: "X" {
-						Default: 0.993984162807465
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,0.993984162807465,L
-						Color: 1,0,0
-					}
-					Channel: "Y" {
-						Default: -2.455725669860840
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,-2.455725669860840,L
-						Color: 0,1,0
-					}
-					Channel: "Z" {
-						Default: 0.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,0.000000000000000,L
-						Color: 0,0,1
-					}
-					LayerType: 1
-				}
-				Channel: "R" {
-					Channel: "X" {
-						Default: -0.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,-0.000000000000000,L
-						Color: 1,0,0
-					}
-					Channel: "Y" {
-						Default: -180.000005008697713
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,-180.000005008697713,L
-						Color: 0,1,0
-					}
-					Channel: "Z" {
-						Default: -0.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,-0.000000000000000,L
-						Color: 0,0,1
-					}
-					LayerType: 2
-				}
-				Channel: "S" {
-					Channel: "X" {
-						Default: 1.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,1.000000000000000,L
-						Color: 1,0,0
-					}
-					Channel: "Y" {
-						Default: 1.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,1.000000000000000,L
-						Color: 0,1,0
-					}
-					Channel: "Z" {
-						Default: 1.000000000000000
-						KeyVer: 4005
-						KeyCount: 1
-						Key: 
-							1924423250,1.000000000000000,L
-						Color: 0,0,1
-					}
-					LayerType: 3
-				}
-			}
-		}
-	}
 	Take: "victory" {
 		FileName: "victory.tak"
 		LocalTime: 0,23093079000
@@ -26548,7 +24813,7 @@ Version5:  {
 		SnapOnFrames: 0
 		ReferenceTimeIndex: -1
 		TimeLineStartTime: 0
-		TimeLineStopTime: 55808274250
+		TimeLineStopTime: 44261734750
 	}
 	RendererSetting:  {
 		DefaultCamera: "Producer Perspective"
