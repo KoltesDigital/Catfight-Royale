@@ -1,0 +1,60 @@
+
+body {
+	font-family: Helvetica, Verdana, Arial, sans-serif;
+	background-color: black;
+	color: white;
+	text-align: center;
+}
+a {
+	color: white;
+}
+div.broken,
+div.missing {
+	margin: auto;
+	position: relative;
+	top: 50%;
+	width: 193px;
+}
+div.broken a,
+div.missing a {
+	height: 63px;
+	position: relative;
+	top: -31px;
+}
+div.broken img,
+div.missing img {
+	border-width: 0px;
+}
+div.broken {
+	display: none;
+}
+#title {
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+div#unityPlayer {
+	cursor: default;
+	margin: auto;
+	height: 600px;
+	width: 960px;
+	position: relative;
+}
+div#unityPlayer.fullscreen {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+}
+section {
+	margin: 20px 0 50px 0;
+}
+section > p {
+	margin: 10px;
+}
+#controls > * {
+	display: inline-block;
+	margin: 0 20px;
+}
